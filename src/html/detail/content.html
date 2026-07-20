@@ -1,0 +1,40 @@
+<section class="sect pt-0">
+  <div class="container">
+
+    <div class="d-flex gap-20 mb-40">
+      <a href="#" class="page-prev-link">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+        </svg>
+      </a>
+      <h1 class="h2">Блоки цилиндров, ГБЦ и картеры</h1>
+    </div>
+
+    <div class="detailImage position-relative mb-40">
+      <img src="@img/admin/detail/scheme.jpg" alt="image">
+      <button class="detailNum detailNum--1" type="button" data-count="1">
+        3
+      </button>
+      <button class="detailNum detailNum--2" type="button" data-count="2">
+        6
+      </button>
+      <button class="detailNum detailNum--3" type="button" data-count="3">
+        3
+      </button>
+    </div>
+
+    <h3 class="mb-32">
+      Запчасти
+    </h3>
+
+    <div class="catalogRow">
+      @@include('../catalog/card-1-detail.html',{})
+      @@include('../catalog/card-2-detail.html',{})
+      @@include('../catalog/card-3-detail.html',{})
+      @@include('../catalog/card-1-detail.html',{})
+      @@include('../catalog/card-2-detail.html',{})
+      @@include('../catalog/card-3-detail.html',{})
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,76 @@
+<section class="news sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="mb-32 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2 mb-0">
+        Акции и новости
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper newsSlider mb-32">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-1.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-2.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-3.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-1.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-2.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-1.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-2.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-3.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-1.html',{})
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          @@include('news/card-2.html',{})
+        </div>
+
+      </div>
+    </div>
+
+    <a href="#" class="button button--grey00 px-3 ml-auto">
+      Все публикации
+      <svg class="w-20 h-20" style="fill: transparent; stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+      </svg>
+    </a>
+
+  </div>
+</section>

@@ -1,0 +1,240 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 12px;
+  height: 48px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &--white {
+    background-color: #fff;
+
+    &:hover {
+      background-color: var(--grey00);
+    }
+  }
+
+  &--yellow {
+    background-color: var(--primary);
+
+    &:hover {
+      background-color: var(--grey30);
+    }
+  }
+
+  &--sm {
+    height: 32px;
+  }
+
+  &--grey60 {
+    background-color: var(--grey60);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--grey30);
+    }
+  }
+
+  &--grey90 {
+    background-color: var(--grey90);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--black);
+    }
+
+    &:disabled {
+      background-color: var(--grey00);
+      color: var(--grey30) !important;
+
+
+      svg {
+        stroke: var(--grey30) !important;
+        fill: var(--grey30) !important;
+      }
+    }
+  }
+
+  &--grey00 {
+    background-color: var(--grey00);
+    color: var(--grey90);
+
+    &:hover {
+      background-color: var(--grey30);
+    }
+  }
+
+  &.color-grey60 {
+    color: var(--grey60);
+  }
+
+  &.color-black {
+    color: var(--black);
+  }
+
+  &.h-24 {
+    height: 24px;
+  }
+
+  &.h-32 {
+    height: 32px;
+  }
+
+  &.h-48 {
+    height: 48px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+
+    &.w-20 {
+      width: 20px;
+    }
+
+    &.h-20 {
+      height: 20px;
+    }
+
+    &.w-24 {
+      width: 24px;
+    }
+
+    &.h-24 {
+      height: 24px;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.headerCartBtn {
+  width: 48px;
+  height: 48px;
+  background: var(--grey60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+
+  &:hover {
+    background-color: var(--primary);
+
+    svg {
+      fill: var(--black);
+      stroke: var(--black);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary);
+    stroke: var(--primary);
+  }
+
+  .count {
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 160%;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid var(--black);
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+  }
+}
+
+.catalogCardBtn {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.catalogTypeGrid {
+  pointer-events: none;
+
+  svg {
+    stroke: #C2C2C2;
+  }
+
+  &.active {
+    pointer-events: all;
+
+    svg {
+      stroke: var(--main-color);
+    }
+  }
+}
+
+.catalogCardRowBtnW {
+  min-width: 160px;
+
+  .button {
+    margin-left: auto;
+  }
+}
+
+.catalogCardRowQuantBtn {
+  width: 32px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--grey60);
+    fill: transparent;
+    stroke-width: 1px;
+  }
+}
+
+.productAddToCart {
+  width: 200px;
+}
+
+.cartItemRemove {
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.cartOrderSubmitBtn {
+  &:disabled {
+    border: 1px solid var(--grey30);
+  }
+}

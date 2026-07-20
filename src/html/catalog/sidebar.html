@@ -1,0 +1,157 @@
+<div class="sidebar" id="sidebar">
+  <div class="filter">
+    <div class="container">
+
+      <div class="filterItem">
+        <div class="filterItemHead d-flex justify-content-between gap-2 align-items-center active">
+          <div class="d-flex gap-10 align-items-center">
+            <h6>Краткий список</h6>
+            <div class="count">
+              1
+            </div>
+          </div>
+
+          <img src="@img/icons/select-arrow.svg" alt="icon">
+        </div>
+        <div class="filterItemBody" style="display: block;">
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_1">
+            <label for="param_1">Фильтр </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_2" checked>
+            <label for="param_2">Фильтр Фильтр </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_3">
+            <label for="param_3">Фильтр </label>
+          </div>
+        </div>
+      </div>
+      <div class="filterItem">
+        <div class="filterItemHead mb-10 d-flex justify-content-between gap-2 align-items-center active">
+          <div class="d-flex align-items-center gap-10">
+            <h6>Большой список</h6>
+            <div class="count">15</div>
+          </div>
+          <img src="@img/icons/select-arrow.svg" alt="icon">
+        </div>
+        <div class="filterItemBody" style="display: block;">
+          <div class="searchField border-gray d-flex position-relative w-100 gap-12 mb-20 py-2 px-12">
+            <img class="searchIcon" src="@img/icons/search.svg" alt="icon">
+            <input class="formInput--search w-100" type="search" placeholder="Поиск">
+            <button class="search-clear" type="button"><img src="@img/icons/search-clear.svg" alt="icon"></button>
+          </div>
+          <div class="max-h-260">
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_1">
+              <label for="marka_1">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_2" checked>
+              <label for="marka_2">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_3">
+              <label for="marka_3">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_4">
+              <label for="marka_4">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_5">
+              <label for="marka_5">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_11">
+              <label for="marka_11">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_12" checked>
+              <label for="marka_12">Производитель Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_13">
+              <label for="marka_13">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_14">
+              <label for="marka_14">Производитель </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marka_15">
+              <label for="marka_15">Производитель </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="filterItem">
+        <div class="filterItemHead d-flex justify-content-between gap-2 align-items-center">
+          <div class="d-flex gap-10 align-items-center">
+            <h6>Закрытый список</h6>
+          </div>
+          <img src="@img/icons/select-arrow.svg" alt="icon">
+        </div>
+        <div class="filterItemBody" style="display: none;">
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_zakr_1">
+            <label for="param_zakr_1">Фильтр </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_zakr_2" checked>
+            <label for="param_zakr_2">Фильтр Фильтр </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="param_zakr_3">
+            <label for="param_zakr_3">Фильтр </label>
+          </div>
+        </div>
+      </div>
+      <div class="filterItem">
+        <div class="filterItemHead d-flex justify-content-between gap-2 align-items-center active">
+          <h6>Цена</h6>
+          <img src="@img/icons/select-arrow.svg" alt="icon">
+        </div>
+        <div class="filterItemBody" style="display: block;">
+          <div class="d-flex px-2 gap-10">
+            <div class="inputW">
+              <input type="number" class="formInput border-grey10 h-40 px-12" placeholder="От">
+            </div>
+            <div class="inputW">
+              <input type="number" class="formInput border-grey10 h-40 px-12" placeholder="До" value="80000">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterItem">
+        <div class="filterItemHead d-flex justify-content-between gap-2 align-items-center active">
+          <h6>Наличие</h6>
+          <img src="@img/icons/select-arrow.svg" alt="icon">
+        </div>
+        <div class="filterItemBody" style="display: block;">
+          <div class="checkbox-item">
+            <input type="checkbox" id="avail_1">
+            <label for="avail_1">Есть в наличии</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="avail_2" checked>
+            <label for="avail_2">Нет в наличии </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="avail_3">
+            <label for="avail_3">Под заказ </label>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="sidebarCatalogLink p-3 d-flex gap-3 align-items-start fw-semibold justify-content-between">
+        Перейти<br> в электронный каталог
+        <img src="@img/icons/el-cat-link.svg" alt="icon">
+      </a>
+      
+    </div>
+
+  </div>
+</div>

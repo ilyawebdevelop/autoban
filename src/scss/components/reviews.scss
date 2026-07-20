@@ -1,0 +1,19 @@
+.reviews {
+  &Slide {
+    padding: 24px 13px;
+    border: 1px solid var(--grey30);
+
+    img {
+      height: 420px;
+      width: 100%;
+      object-fit: contain;
+      object-position: top;
+    }
+  }
+}
+
+.reviewsCardItem {
+  border: 1px solid var(--grey30);
+  padding: 6px 8px;
+  width: 160px;
+}

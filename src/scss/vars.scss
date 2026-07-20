@@ -1,0 +1,31 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Containers
+:root {
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: "Inter", sans-serif;
+  --second-family: "Source Sans 3", sans-serif;
+  --font3: "Ubuntu", sans-serif;
+  --font4: "Roboto Condensed", sans-serif;
+  --primary: #ff0;
+  --white: #fff;
+  --main-color: #000;
+  --black: #000;
+  --alert: #f00;
+  --grey00: #f1f1f1;
+  --grey10: #e6e6e6;
+  --grey30: #c2c2c2;
+  --grey60: #666;
+  --grey90: #2e2e2e;
+}

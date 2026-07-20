@@ -1,0 +1,54 @@
+<div class="catalogCardRow flex-row">
+
+  <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+    <div class="d-flex gap-12">
+      <a href="#" class="catalogCardRowImg">
+        <img src="@img/admin/cat/image-1.png" alt="image">
+      </a>
+      <div class="d-flex flex-column gap-2">
+        <a href="#" class="catalogCardRowTitle fw-medium">
+          Амортизатор кабины задний
+        </a>
+        <div class="available d-flex align-items-center gap-1 fz-12 color-grey30">
+          <img src="@img/icons/not-available.svg" alt="icon">
+          Нет в наличии
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex gap-12 align-items-center">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+        <input type="number" class="formInput catalogCardRowCount" value="5" min="1">
+        <div class="d-flex flex-column">
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-up"></use>
+            </svg>
+          </button>
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+        <div class="h5 mb-0">
+          3 035 ₽
+        </div>
+      </div>
+      <div class="catalogCardRowBtnW">
+        <button class="catalogCardBtn button button--grey00 px-12 gap-2">
+          <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
+            <use xlink:href="img/icons/icons.svg#time"></use>
+          </svg>
+          Заказать
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

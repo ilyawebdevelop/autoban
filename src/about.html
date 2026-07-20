@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"О нас"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/breadcrumbs.html',{})
+			@@include('html/about/content.html',{})
+			@@include('html/reviews.html',{})
+			@@include('html/about/clients.html',{})
+			@@include('html/main/faq.html',{})
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

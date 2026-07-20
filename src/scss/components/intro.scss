@@ -1,0 +1,89 @@
+.intro {
+  &Baner {
+    min-height: 420px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba($color: #000000, $alpha: .4);
+    }
+
+    &Top {
+      padding: 44px;
+    }
+
+    &Footer {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 24px 44px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+      position: relative;
+      z-index: 1;
+
+      .introAdvSlide {
+
+        img {
+          width: 48px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  &Slider {
+    .swiper-pagination {
+      position: absolute;
+      bottom: 17px;
+    }
+  }
+
+  &Slide {
+    height: 420px;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    &Num {
+      position: relative;
+      line-height: 50px;
+    }
+
+    &--dark {
+      &>* {
+        position: relative;
+        z-index: 1;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: .5);
+      }
+    }
+  }
+}

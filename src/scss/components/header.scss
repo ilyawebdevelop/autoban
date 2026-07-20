@@ -1,0 +1,273 @@
+// Header
+.header {
+  &T {
+    background-color: var(--black);
+  }
+
+  &B {
+    background-color: var(--grey90);
+  }
+
+  &Nav {
+    ul {
+      li {
+        a {
+          font-size: 12px;
+          line-height: 133%;
+          color: var(--white);
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  &Logo {
+    flex-shrink: 0;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      width: 169px;
+    }
+  }
+
+  .socials {
+    ul {
+      li {
+        a {
+          width: 24px;
+          height: 24px;
+          background-color: var(--grey60);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: var(--grey30);
+          }
+        }
+      }
+    }
+  }
+
+  &Phone {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &.gap-12 {
+      gap: 12px;
+    }
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.headerCartMenu {
+  padding: 40px 16px 40px 40px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.07);
+  width: 800px;
+  position: absolute;
+  top: calc(100% + 8px);
+  background-color: #fff;
+  z-index: 2;
+  right: 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.headerCatalog {
+  display: none;
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+}
+
+.headerCartMenuList {
+  overflow-y: auto;
+  max-height: 264px;
+  padding-right: 10px;
+}
+
+.headerCartMenuFooter {
+  border-top: 1px solid var(--grey00);
+}
+
+/* Ширина скроллбара */
+.headerCartMenuList::-webkit-scrollbar,
+.headerCatalogContentNav::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Цвет фона самого канала скроллбара (дорожки) */
+.headerCartMenuList::-webkit-scrollbar-track,
+.headerCatalogContentNav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Можно сделать transparent, если нужен прозрачный фон */
+}
+
+/* Цвет самого ползунка (то, что двигаем) */
+.headerCartMenuList::-webkit-scrollbar-thumb,
+.headerCatalogContentNav::-webkit-scrollbar-thumb {
+  background: #C2C2C2;
+  border-radius: 2px;
+  /* Скругление углов для аккуратного вида */
+}
+
+/* Цвет ползунка при наведении */
+.headerCartMenuList::-webkit-scrollbar-thumb:hover,
+.headerCatalogContentNav::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.headerCartMenuList .cartItem {
+  padding-top: 0;
+  padding-bottom: 17px;
+}
+
+.headerCatalog {
+  padding: 0 40px;
+  background: var(--white);
+  position: absolute;
+  top: 129px;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 1px 15px 27px -12px rgba(34, 60, 80, 0.3);
+}
+
+.headerCatalogGrid {
+  display: flex;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.headerCatalogL {
+  width: 370px;
+  flex-shrink: 0;
+  border-right: 1px solid #e2e6ea;
+
+  .tabs__nav-item {
+    width: 50%;
+
+    .tabs__nav-btn {
+      width: 100%;
+    }
+  }
+}
+
+.headerCatalogR {
+  width: calc(100% - 355px);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.headerCatalogNav {
+  padding-bottom: 30px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.headerCatalogNavLink {
+  padding-right: 52px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 16px;
+  width: 100%;
+  text-align: start;
+  font-weight: 600;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+
+  &:hover {
+    background-color: #f2f4f6;
+    background-image: url('@img/icons/nav-arrow-right.svg');
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  &--bg-none {
+    &:hover {
+      background-image: none;
+    }
+  }
+}
+
+.headerCatalogContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.headerCatalogContentNav {
+  grid-column: 6 span;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-bottom: 30px;
+
+  ul {
+    li {
+      a {
+        font-weight: 600;
+        color: var(--grey60);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: flex;
+        width: fit-content;
+
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+.headerCatalogContentImageW {
+  grid-column: 6 span;
+  background: var(--grey00);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 5px;
+  height: fit-content;
+
+  .headerCatalogContentImage {
+    height: 300px;
+    width: 350px;
+    object-fit: contain;
+  }
+
+  .rect {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+  }
+}

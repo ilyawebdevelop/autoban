@@ -1,0 +1,65 @@
+.mainCatCard {
+  background: var(--grey00);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 220px;
+  position: relative;
+
+  &:hover {
+    background-color: var(--grey30);
+  }
+
+  &Title {
+    max-width: 175px;
+  }
+
+  &Img {
+    &--sm {
+      height: 120px;
+      object-fit: contain;
+    }
+
+    &--absolute {
+      width: 220px;
+      height: 220px;
+      object-fit: contain;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+
+  &--rect {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url('@img/icons/rect-card.svg') no-repeat center center / contain;
+    }
+  }
+}
+
+.mainCatCardTitle-max-stroke {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+}
+.mainCatCard--intro {
+  width: 240px;
+  height: 240px;
+  flex-shrink: 0;
+  .mainCatCardImg {
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

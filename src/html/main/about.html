@@ -1,0 +1,35 @@
+<section class="about sect pt-0">
+  <div class="container">
+    <div class="row mb-32">
+      <div class="col-lg-6">
+        <h2 class="mb-20" style="max-width: 560px;">
+          Группа Компаний «АвтоБан» — <span>официальный дилер бренда SHACMAN</span>
+        </h2>
+        <a href="#" class="button button--yellow px-3">
+          Подробнее о компании
+          <svg class="w-20 h-20" style="fill: transparent; stroke-width: 1.5px;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <div class="swiper aboutSlider">
+          <div class="swiper-wrapper">
+
+            <a href="@img/admin/about/image-1.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="@img/admin/about/image-1.jpg" alt="image">
+            </a>
+            <a href="@img/admin/intro/image-1.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="@img/admin/intro/image-1.jpg" alt="image">
+            </a>
+            <a href="@img/admin/intro/image-2.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="@img/admin/intro/image-2.jpg" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    @@include('../about/about-adv.html',{})
+  </div>
+</section>

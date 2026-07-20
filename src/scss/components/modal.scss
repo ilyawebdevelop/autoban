@@ -1,0 +1,142 @@
+// modal
+.modal {
+  padding: 60px;
+  display: none;
+  width: 640px;
+  background-color: var(--grey90);
+  color: var(--main-color);
+  height: fit-content;
+
+  h2 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: .03em;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  &Descr {
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey30)
+  }
+
+  .is-close-btn {
+    background-color: transparent;
+    color: #C2C2C2;
+  }
+
+  .formInput,
+  .formText {
+    color: #fff;
+  }
+
+  .form-floating>.form-control:focus~label {
+    color: #fff;
+  }
+
+  .form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .form-floating>label {
+    color: var(--grey30);
+  }
+
+  .form-floating>.form-control:not(:placeholder-shown)~label {
+    color: #fff;
+  }
+
+  .agreement {
+    input {
+      &:checked {
+        &+label {
+          .rect {
+            background-color: var(--primary);
+            border-color: var(--primary);
+          }
+        }
+      }
+    }
+
+    label {
+      .rect {
+        background-color: #fff;
+        border: 1px solid var(--grey30);
+      }
+
+      &:hover {
+        .agreementText {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .agreementText {
+    color: var(--grey30);
+    transition: color .2s linear;
+  }
+}
+
+#modalReviews,
+#modalThanks,
+#modalBad,
+#modalSended {
+  h2 {
+    font-size: 32px;
+    line-height: 125%;
+  }
+}
+
+#modalThanks {
+  .reviewsCardItem {
+    background-color: #fff;
+  }
+}
+
+#modalDetail {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+
+  h2 {
+    color: var(--black);
+
+    span {
+      color: var(--black);
+    }
+  }
+}
+
+.modalDetailImgW {
+  padding: 34px;
+  border: 1px solid var(--grey30);
+  position: relative;
+
+  .sale {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--white);
+    background: var(--alert);
+    padding: 6px;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.modalDetailImg {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+#modalDetail .formInput {
+  color: var(--main-color);
+}

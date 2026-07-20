@@ -1,0 +1,28 @@
+.news {
+  &Card {
+    &Img {
+      &:hover {
+        opacity: .85;
+      }
+      img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+      }
+    }
+    &Title {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      color: var(--grey90);
+      &:hover {
+        color: var(--grey60);
+      }
+    }
+    &Date {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--grey60);
+    }
+  }
+}

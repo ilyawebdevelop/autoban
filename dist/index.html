@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	
+	<title>Главная</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="headerT py-2 ">
+    <div class="container">
+      <div class="d-flex gap-3 align-items-center justify-content-between">
+        <nav class="headerNav">
+  <ul class="d-flex gap-20">
+    <li><a href="#">Оплата и доставка</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Акции и новости</a></li>
+  </ul>
+</nav>
+        <div class="d-flex gap-2 align-items-center">
+          <a href="tel:+73952788630" class="headerPhone">
+            <img src="img/icons/phone.svg" alt="icon">
+            +7 (3952) 78-86-30
+          </a>
+          <div class="fz-12 color-grey30">
+            с 09.00 до 20.00 (Иркутск, МСК+5)
+          </div>
+          <div class="socials">
+            <ul class="d-flex gap-2 align-items-center">
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/icon-1.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/icon-2.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/icon-3.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/icon-4.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/icon-5.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="button button--grey60 h-24 fz-12 gap-1 px-12 color-primary fw-normal" data-fancybox
+            data-src="#modalWrite">
+            <img src="img/icons/message.svg" alt="icon">
+            Написать нам
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerB py-20">
+    <div class="container">
+      <div class="d-flex gap-20 align-items-center position-relative">
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/header-logo.svg" alt="logo">
+        </a>
+        <button class="headerCatalogBtn button button--yellow px-3">
+          <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.6px;">
+            <use xlink:href="img/icons/icons.svg#catalog"></use>
+          </svg>
+          Каталог
+        </button>
+        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+          <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
+          <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
+          <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+          <button class="searchBtn button button--sm button--grey90 px-3 fz-12 fw-normal">
+            Искать
+          </button>
+        </div>
+        <a href="#" class="headerCartBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          <span class="count">2</span>
+        </a>
+        <div class="headerCartMenu">
+          <div class="headerCartMenuList">
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      303 500 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      425 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      3 035 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="img/admin/cat/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      3 035 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      125 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      303 500 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      425 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="headerCartMenuFooter pt-3">
+            <div class="d-flex justify-content-between align-items-start gap-3">
+              <h5 class="mb-0">
+                Итого
+              </h5>
+              <div class="d-flex flex-column align-items-end catalogCardRowPriceW mb-3">
+                <div class="h5 mb-0">
+                  312 695 ₽
+                </div>
+                <div class="color-grey30 line-through fz-14">
+                  1 2500 000 ₽
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="fz-14 color-grey60">
+                Перейдите в корзину, чтобы рассчитать стоимость доставки и применить скидки и бонусы
+              </div>
+              <button class="button button--grey90 px-3 flex-shrink-0">
+                Перейти в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headerCatalog">
+      <div class="container">
+        <div class="headerCatalogGrid">
+          <div class="headerCatalogL">
+            <div class="tabs_2" data-tabs="popup_2">
+              <ul class="tabs__nav mb-3">
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По типу</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По модели</button></li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__panel">
+                  <nav class="headerCatalogNav">
+  <ul>
+    <li>
+      <button class="headerCatalogNavLink" type="button" data-menu="1">
+        <svg style="fill: transparent; stroke: #000;">
+          <use xlink:href="img/icons/icons.svg#cat-1"></use>
+        </svg>
+        Двигатель и комплектующие
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="2">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-2"></use>
+        </svg>
+        Трансмиссия
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="3">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-3"></use>
+        </svg>
+        Подвеска и рулевое управление
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="4">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-4"></use>
+        </svg>
+        Кабина
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="5">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-5"></use>
+        </svg>
+        Рама, кузов, надстройки
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="6">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-6"></use>
+        </svg>
+        Электрика и свет
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="7">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-7"></use>
+        </svg>
+        Гидравлические и пневмосистемы
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="8">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-8"></use>
+        </svg>
+        Тормозная система
+      </button>
+      <button class="headerCatalogNavLink" type="button" data-menu="9">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cat-9"></use>
+        </svg>
+        Сальники
+      </button>
+    </li>
+  </ul>
+</nav>
+                </div>
+                <div class="tabs__panel">
+                  <nav class="headerCatalogNav">
+  <ul>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman F2000
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman F3000
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX1255GP4
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX13164N456
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3255DR385
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3256DR384 (F3000)
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3256DT384
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX32586T384 (X3000)
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3258DR384 (F3000)
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3258DR384—F2000
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3316DR366 (F2000)
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3316DT366
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3316DT426C
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3316DV386
+      </a>
+    </li>
+    <li>
+      <a href="#" class="headerCatalogNavLink headerCatalogNavLink--bg-none" type="button">
+        Shacman SX3316HT406C
+      </a>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="headerCatalogR">
+            <div class="headerCatalogContent" data-menu="1">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Двигатель и комплектующие
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Топливная система</a></li>
+                  <li><a href="#">Система выпуска</a></li>
+                  <li><a href="#">Система охлаждения ДВС</a></li>
+                  <li><a href="#">Блоки цилиндров, ГБЦ и картеры</a></li>
+                  <li><a href="#">Крепление и защита двигателя</a></li>
+                  <li><a href="#">Поршни, шатуны, кольца, вкладыши</a></li>
+                  <li><a href="#">Система смазки</a></li>
+                  <li><a href="#">Коленвалы, распредвалы и маховики</a></li>
+                  <li><a href="#">ГРМ</a></li>
+                  <li><a href="#">Турбины, компрессоры</a></li>
+                  <li><a href="#">Система зажигания</a></li>
+                  <li><a href="#">Двигатели в сборе</a></li>
+                  <li><a href="#">Система впуска</a></li>
+                  <li><a href="#">Система кондиционирования и отопления</a></li>
+                  <li><a href="#">Стартеры и генераторы</a></li>
+                  <li><a href="#">Прокладки и Сальники</a></li>
+                  <li><a href="#">Ролики и ремни</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="2">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Трансмиссия
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Сцепление</a></li>
+                  <li><a href="#">КПП в сборе</a></li>
+                  <li><a href="#">Детали КПП</a></li>
+                  <li><a href="#">Механизмы отбора мощности</a></li>
+                  <li><a href="#">Карданный вал, привод и полуось</a></li>
+                  <li><a href="#">Редуктор, муфта и дифференциалы</a></li>
+                  <li><a href="#">Подшипники и крестовины</a></li>
+                  <li><a href="#">Раздаточная коробка ZQC2000-57K</a></li>
+
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/cat/image-2.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="3">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Подвеска и рулевое управление
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Рулевые рейки и усилители</a></li>
+                  <li><a href="#">Рычаги и шаровые опоры</a></li>
+                  <li><a href="#">Пальцы и шкворни</a></li>
+                  <li><a href="#">Амортизаторы и пружины</a></li>
+                  <li><a href="#">Рессоры и листы</a></li>
+                  <li><a href="#">Балки, стабилизаторы и балансиры</a></li>
+                  <li><a href="#">Рулевые тяги и наконечники</a></li>
+                  <li><a href="#">Кулаки и ступицы</a></li>
+                  <li><a href="#">Втулки и сайлентблоки</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="4">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Кабина
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Кабина в сборе</a></li>
+                  <li><a href="#">Окна и стёкла</a></li>
+                  <li><a href="#">Внешние элементы кабины</a></li>
+                  <li><a href="#">Подвеска кабины</a></li>
+                  <li><a href="#">Зеркала</a></li>
+                  <li><a href="#">Двери</a></li>
+                  <li><a href="#">Крылья</a></li>
+                  <li><a href="#">Капот</a></li>
+                  <li><a href="#">Бампера</a></li>
+                  <li><a href="#">Детали салона</a></li>
+                  <li><a href="#">Сиденья и спальники</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/cat/image-3.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="5">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Рама, кузов, надстройки
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Топливные баки</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="6">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Электрика и свет
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Фонари и фары</a></li>
+                  <li><a href="#">Электронные блоки управления</a></li>
+                  <li><a href="#">Электропроводка</a></li>
+                  <li><a href="#">Контроллеры, реле и датчики</a></li>
+                  <li><a href="#">Аккумуляторы</a></li>
+                  <li><a href="#">Телематика, тахографы и рации</a></li>
+                  <li><a href="#">Электродвигатели и актуаторы</a></li>
+                  <li><a href="#">Кнопки, переключатели</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="7">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Гидравлические и пневмосистемы
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="8">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Тормозная система
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="9">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Сальники
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+		<main class="main">
+			<section class="intro sect pt-20">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="introBaner position-relative d-flex flex-column justify-content-between"
+          style="background-image: url('img/admin/intro/image-1.jpg');">
+          <div class="introBanerTop">
+            <h1>
+              Оригинальные запчасти для Shacman Shaanxi <span>в Иркутске</span>
+            </h1>
+          </div>
+
+          <div class="swiper introAdvSlider introBanerFooter w-100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide introAdvSlide d-flex align-items-center gap-4">
+                <img src="img/admin/intro/icon-1.svg" alt="icon">
+                <div class="color-white fw-medium">
+                  Бесплатная доставка по&nbsp;Иркутску
+                </div>
+              </div>
+              <div class="swiper-slide introAdvSlide d-flex align-items-center gap-4">
+                <img src="img/admin/intro/icon-2.svg" alt="icon">
+                <div class="color-white fw-medium">
+                  Гарантия
+                  качества
+                </div>
+              </div>
+              <div class="swiper-slide introAdvSlide d-flex align-items-center gap-4">
+                <img src="img/admin/intro/icon-3.svg" alt="icon">
+                <div class="color-white fw-medium">
+                  Выгодные
+                  цены
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="swiper introSlider">
+          <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide introSlide d-flex flex-column"
+              style="background-image: url('img/admin/intro/image-2.jpg');">
+              <div class="d-flex gap-1 align-items-end">
+                <div class="flex-column gap-1">
+                  <span class="fz-20 text-uppercase fw-bold color-primary mb-12 d-block">СКидки до</span>
+                  <span class="fz-80 fw-bold color-primary introSlideNum">20%</span>
+                </div>
+                <div class="fw-bold color-white">
+                  на оригинальные
+                  запчасти
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide introSlide introSlide--dark d-flex flex-column"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="d-flex align-items-start flex-column">
+                <div class="flex-column gap-1">
+                  <span class="fz-20 text-uppercase fw-bold color-primary mb-12 d-block">Заголовок 2</span>
+
+                </div>
+                <div class="fw-bold color-white">
+                  на доставку в Иркутскую область
+                  запчастей
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide introSlide d-flex flex-column"
+              style="background-image: url('img/admin/intro/image-2.jpg');">
+              <div class="d-flex gap-1 align-items-end">
+                <div class="flex-column gap-1">
+                  <span class="fz-20 text-uppercase fw-bold color-primary mb-12 d-block">СКидки до</span>
+                  <span class="fz-80 fw-bold color-primary introSlideNum">20%</span>
+                </div>
+                <div class="fw-bold color-white">
+                  на оригинальные
+                  запчасти
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide introSlide introSlide--dark d-flex flex-column"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="d-flex align-items-start flex-column">
+                <div class="flex-column gap-1">
+                  <span class="fz-20 text-uppercase fw-bold color-primary mb-12 d-block">Заголовок 2</span>
+
+                </div>
+                <div class="fw-bold color-white">
+                  на доставку в Иркутскую область
+                  запчастей
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="categories sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead mb-30 mb-lg-24 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Категории каталога
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-1.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Двигатель и комплектующие</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-2.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Трансмиссия</div>
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman F2000</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman F3000</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman SX1255GP4</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-3.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Подвеска и рулевое управление</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-4.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Кабина</div>
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX13164N456</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3255DR385</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3256DR384 (F3000)</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-1.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Двигатель и комплектующие</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-2.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold">Трансмиссия</div>
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman F2000</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman F3000</div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard align-items-center">
+                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
+                <div class="mainCatCardTitle h6 text-center fw-semibold mt-3">Shacman SX1255GP4</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="products sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Популярные товары
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    213 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-1.png" alt="image">
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    3 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey30">
+      <img src="img/icons/not-available.svg" alt="icon">
+      Нет в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey00 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#time"></use>
+      </svg>
+      Заказать
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-5.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    4 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium"> 
+    О-оочень длинный заголовок, который уйдет в 3 точки О-оочень длинный заголовок, который уйдет в 3 точки
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    213 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-1.png" alt="image">
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    3 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey30">
+      <img src="img/icons/not-available.svg" alt="icon">
+      Нет в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey00 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#time"></use>
+      </svg>
+      Заказать
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    213 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-1.png" alt="image">
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    3 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey30">
+      <img src="img/icons/not-available.svg" alt="icon">
+      Нет в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey00 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#time"></use>
+      </svg>
+      Заказать
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-5.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    4 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium"> 
+    О-оочень длинный заголовок, который уйдет в 3 точки О-оочень длинный заголовок, который уйдет в 3 точки
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/catalog/image-1.png" alt="image">
+    <div class="catalogCardTag">
+      Акция!
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    213 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+      <img src="img/icons/checked.svg" alt="icon">
+      Есть в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey90 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: #fff; stroke: #fff;">
+        <use xlink:href="img/icons/icons.svg#cart"></use>
+      </svg>
+      В корзину
+    </button>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="catalogCardImg">
+    <img src="img/admin/cat/image-1.png" alt="image">
+  </a>
+
+  <div class="catalogCardPrice mb-1">
+    3 035 ₽
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Амортизатор кабины задний
+  </a>
+
+  <div class="d-flex flex-column mt-auto">
+    <div class="available d-flex align-items-center gap-1 fz-12 color-grey30">
+      <img src="img/icons/not-available.svg" alt="icon">
+      Нет в наличии
+    </div>
+    <button class="catalogCardBtn button button--sm button--grey00 px-12 mt-3 fz-14 gap-2">
+      <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#time"></use>
+      </svg>
+      Заказать
+    </button>
+  </div>
+
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="podbor sect pt-0">
+  <div class="container">
+    <div class="podborW">
+      <div class="col">
+        <div class="podborContent">
+          <h2 class="mb-2">
+            <span>Не нашли</span> интересующую вас запчасть?
+          </h2>
+          <div class="podborDescr mb-32">
+            <span>Поможем подобрать</span> или привезем из Китая за 7 дней!
+          </div>
+          <div class="d-flex gap-20">
+            <button class="button button--yellow px-3" data-fancybox data-src="#modalOrder">
+              Подобрать запчасть
+            </button>
+            <button class="button button--white px-3" data-fancybox data-src="#modalOrder">
+              Заказать запчасть
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="podborImageW position-relative">
+          <img class="podborRectBg" src="img/podbor/rect-yellow.svg" alt="rect">
+          <img class="podborRect" src="img/podbor/rect.svg" alt="rect">
+          <img class="podborLogo" src="img/admin/podbor/logo.svg" alt="logo">
+          <img class="podborImg" src="img/admin/podbor/image.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="about sect pt-0">
+  <div class="container">
+    <div class="row mb-32">
+      <div class="col-lg-6">
+        <h2 class="mb-20" style="max-width: 560px;">
+          Группа Компаний «АвтоБан» — <span>официальный дилер бренда SHACMAN</span>
+        </h2>
+        <a href="#" class="button button--yellow px-3">
+          Подробнее о компании
+          <svg class="w-20 h-20" style="fill: transparent; stroke-width: 1.5px;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <div class="swiper aboutSlider">
+          <div class="swiper-wrapper">
+
+            <a href="img/admin/about/image-1.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="img/admin/about/image-1.jpg" alt="image">
+            </a>
+            <a href="img/admin/intro/image-1.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="img/admin/intro/image-1.jpg" alt="image">
+            </a>
+            <a href="img/admin/intro/image-2.jpg" class="swiper-slide aboutSlide" data-fancybox="about-gallery">
+              <img src="img/admin/intro/image-2.jpg" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+       <div class="aboutAdv gap-20">
+      <div class="aboutAdvCard" style="background-color: var(--primary);">
+        <div class="aboutAdvCardTitle">Площадки</div>
+        <div class="aboutAdvCardSum">
+          >12 000 м²
+        </div>
+        <div class="aboutAdvCardDescr">торговых и сервисных площадей компании</div>
+      </div>
+      <div class="aboutAdvCard" style="background-color: var(--grey90);">
+        <div class="aboutAdvCardTitle" style="color: var(--primary);">Сервис</div>
+        <div class="aboutAdvCardSum" style="color: #fff;">
+          3
+        </div>
+        <div class="aboutAdvCardDescr" style="color: var(--grey30);">сервисных центра</div>
+      </div>
+      <div class="aboutAdvCard" style="background-color: var(--grey00);">
+        <div class="aboutAdvCardTitle">Склад</div>
+
+        <div class="aboutAdvCardDescr">Собственный склад запчастей</div>
+      </div>
+      <div class="aboutAdvCard" style="background-color: var(--grey60);">
+        <div class="aboutAdvCardTitle" style="color: var(--primary);">Ремонт</div>
+        <div class="aboutAdvCardDescr" style="color: var(--grey00);">Выездные ремонтные бригады</div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="reviews sliderW sect pt-0">
+  <div class="container">
+
+    <div class="sectHead d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Отзывы о нашей компании
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper reviewsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-1.jpg" alt="image">
+        </div>
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-2.jpg" alt="image">
+        </div>
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-3.jpg" alt="image">
+        </div>
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-4.jpg" alt="image">
+        </div>
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-1.jpg" alt="image">
+        </div>
+        <div class="swiper-slide reviewsSlide">
+          <img src="img/admin/reviews/image-2.jpg" alt="image">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="d-flex gap-3 justify-content-between mt-40">
+
+      <div class="d-flex gap-2">
+        <div class="reviewsCardItem">
+          <div class="d-flex align-items-center flex-wrap justify-content-between fz-8 mb-6">
+            <a class="color-grey30 fw-semibold hover-black" href="#" target="_blank">Оценка в 2ГИС</a>
+            <a class="color-grey60 fw-semibold hover-black" href="#">Оставить отзыв</a>
+          </div>
+          <div class="d-flex align-items-center flex-wrap justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <img class="flex-shrink-0" src="img/icons/2gis.svg" alt="icon">
+              <span class="fw-semibold">4,7</span>
+            </div>
+            <img src="img/admin/reviews/star-1.svg" alt="stars">
+          </div>
+        </div>
+        <div class="reviewsCardItem">
+          <div class="d-flex align-items-center flex-wrap justify-content-between fz-8 mb-6">
+            <a class="color-grey30 fw-semibold hover-black" href="#" target="_blank">Оценка в Яндекс</a>
+            <a class="color-grey60 fw-semibold hover-black" href="#">Оставить отзыв</a>
+          </div>
+          <div class="d-flex align-items-center flex-wrap justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <img class="flex-shrink-0" src="img/icons/yandex.svg" alt="icon">
+              <span class="fw-semibold">4,4</span>
+            </div>
+            <img src="img/admin/reviews/star-2.svg" alt="stars">
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button button--yellow px-3" data-fancybox data-src="#modalOrder">
+        Написать отзыв
+      </a>
+    </div>
+
+  </div>
+</section>
+			<section class="news sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="mb-32 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2 mb-0">
+        Акции и новости
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg style="fill: transparent;">
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper newsSlider mb-32">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Грузовики SDAC теперь в ассортименте компании «Автобан»!</a>
+  <div class="newsCardDate">01 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-3.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Грузовики SDAC теперь в ассортименте компании «Автобан»!</a>
+  <div class="newsCardDate">01 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Грузовики SDAC теперь в ассортименте компании «Автобан»!</a>
+  <div class="newsCardDate">01 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-3.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Грузовики SDAC теперь в ассортименте компании «Автобан»!</a>
+  <div class="newsCardDate">01 июня 2026</div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg mb-3 d-flex">
+    <img src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <div class="newsCardDate">21 июня 2026</div>
+</div>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="#" class="button button--grey00 px-3 ml-auto">
+      Все публикации
+      <svg class="w-20 h-20" style="fill: transparent; stroke-width: 1.5px;">
+        <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+      </svg>
+    </a>
+
+  </div>
+</section>
+			<section class="faq bg--grey00 sect">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="d-flex gap-4 flex-column justify-content-between h-100">
+          <h2 class="h2">
+            Часто задаваемые вопросы
+          </h2>
+          <div class="d-flex flex-column gap-3">
+            <div class="color-grey60" style="max-width: 555px;">
+              Если вы не нашли ответ на свой вопрос — позвоните нам! Проконсультируем и подробно обо всём расскажем.
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <a class="d-flex gap-12 hover-opacity fw-medium" href="tel:+73952788630">
+                <img src="img/icons/phone.svg" alt="icon">
+                +7 (3952) 78-86-30
+              </a>
+              <div class="fz-14 color-grey60">
+                с 09.00 до 20.00 (Иркутск, МСК+5)
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Как подобрать запчасти?
+              </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="content">
+                  <p>
+                    Официальные дилерские договоры с производителями и регулярное обучение персонала на
+                    заводах-изготовителях позволяют ГК «АвтоБан» обеспечивать оперативное и высококлассное сервисное
+                    обслуживание реализованной техники.
+                  </p>
+                  <p>
+                    Для этого в распоряжении компании есть три сервисных центра, склад
+                    запчастей и выездные ремонтные бригады, охватывающие всю Иркутскую область и соседние регионы.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Как подобрать запчасти? 2
+              </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                  Для этого в распоряжении компании есть три сервисных центра, склад
+                  запчастей и выездные ремонтные бригады, охватывающие всю Иркутскую область и соседние регионы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin
+                adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footerT">
+    <div class="container">
+      <nav class="footerNav mb-40">
+        <ul class="d-flex gap-40">
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Акции и новости</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Полезные материалы</a></li>
+        </ul>
+      </nav>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="mb-20 color-grey30 fw-semibold">
+            Свяжитесь с нами:
+          </div>
+          <div class="d-flex flex-column w-fit">
+            <div class="socials mb-2 w-fit">
+              <ul class="d-flex gap-2 align-items-center w-fit">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-1.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-2.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-3.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-4.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/icon-5.svg" alt="icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="button button--grey60 h-24 fz-12 gap-1 px-12 color-primary fw-normal w-100">
+              <img src="img/icons/message.svg" alt="icon">
+              Написать нам
+            </button>
+          </div>
+
+        </div>
+        <div class="col-lg-3">
+          <a href="mailto:info@avtoban38.ru" class="headerPhone gap-12 mb-20">
+            <img src="img/icons/mail.svg" alt="icon">
+            info@avtoban38.ru
+          </a>
+          <a href="tel:+73952788630" class="headerPhone gap-12">
+            <img src="img/icons/phone.svg" alt="icon">
+            +7 (3952) 78-86-30
+          </a>
+          <span class="fz-12 color-grey30 footerWork">с 09.00 до 20.00 (Иркутск, МСК+5)</span>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex align-items-start gap-12 color-grey30 fw-medium">
+            <img src="img/icons/place.svg" alt="icon">
+            664084, Иркутская область,<br> Иркутский район, д. Малая Еланка, Пролетарская улица, 1Б
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <button class="button button--yellow px-3 ml-auto">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerB">
+    <div class="container">
+      <div class="d-flex align-items-center gap-40">
+        <div class="d-flex gap-20">
+          <span>© ООО «А+Б Импорт»</span>
+          <span>ИНН: 7536185797</span>
+          <a class="underline hover-white" href="#">Соглашение на обработку персональных данных</a>
+        </div>
+        <span class="footerMeta">
+          * Корпорация Meta (владеющая Facebook, Instagram и WhatsApp) признана в России экстремистской организацией. Её
+          деятельность официально запрещена на территории страны.
+        </span>
+        <a href="#" class="develop d-flex gap-2 hover-white fw-medium">
+          <img src="img/icons/develop.svg" alt="icon">
+          Разработка сайта – Вангер.рф
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- modalWrite -->
+<div class="modal" id="modalWrite">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-2"><span>Написать</span> нам</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr mb-4">
+      Задайте свой вопрос и наши менеджеры свяжутся с вами.
+    </p>
+    <div class="modalForm">
+      <div class="form-floating inputW mb-3">
+        <input type="text" id="modalWriteName" class="form-control formInput border-grey60" placeholder="Имя">
+        <label for="modalWriteName">Имя</label>
+      </div>
+      <div class="form-floating inputW mb-3">
+        <input type="tel" id="modalWritePhone" class="form-control formInput border-grey60"
+          placeholder="+7 (___) ___-__-__">
+        <label for="modalWritePhone">Телефон</label>
+      </div>
+      <div class="form-floating inputW mb-4 pb-2">
+        <textarea class="form-control formText border-grey60" name="modalWriteText" id="modalWriteText"
+          placeholder="Ваше сообщение" style="height: 96px;"></textarea>
+        <label for="modalWriteText">Ваше сообщение</label>
+      </div>
+
+
+      <div class="agreement mb-4">
+        <input id="product_order_agree" type="checkbox">
+        <label for="product_order_agree">
+          <div class="rect"></div>
+          <div class="agreementText" style="opacity: 0.8">
+            Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </label>
+      </div>
+
+      <button class="button button--yellow formBtn px-3">
+        Отправить
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modalPodbor -->
+<div class="modal" id="modalPodbor">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-2"><span>Подобрать</span> запчасть</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr mb-4">
+      Поможем подобрать или привезем из Китая за 7 дней!
+    </p>
+    <div class="modalForm">
+      <div class="form-floating inputW mb-3">
+        <input type="text" id="modalWriteName" class="form-control formInput border-grey60" placeholder="Имя">
+        <label for="modalWriteName">Имя</label>
+      </div>
+      <div class="form-floating inputW mb-4">
+        <input type="tel" id="modalWritePhone" class="form-control formInput border-grey60"
+          placeholder="+7 (___) ___-__-__">
+        <label for="modalWritePhone">Телефон</label>
+      </div>
+
+      <div class="agreement mb-4">
+        <input id="modalPodborAgree" type="checkbox">
+        <label for="modalPodborAgree">
+          <div class="rect"></div>
+          <div class="agreementText" style="opacity: 0.8">
+            Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </label>
+      </div>
+
+      <button class="button button--yellow formBtn px-3">
+        Отправить заявку
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modalZakaz -->
+<div class="modal" id="modalZakaz">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-2"><span>Заказать</span> запчасть</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr mb-4">
+      Поможем подобрать или привезем из Китая за 7 дней!
+    </p>
+    <div class="modalForm">
+      <div class="form-floating inputW mb-3">
+        <input type="text" id="modalWriteName" class="form-control formInput border-grey60" placeholder="Имя">
+        <label for="modalWriteName">Имя</label>
+      </div>
+      <div class="form-floating inputW mb-4">
+        <input type="tel" id="modalWritePhone" class="form-control formInput border-grey60"
+          placeholder="+7 (___) ___-__-__">
+        <label for="modalWritePhone">Телефон</label>
+      </div>
+
+      <div class="agreement mb-4">
+        <input id="modalZakazAgree" type="checkbox">
+        <label for="modalZakazAgree">
+          <div class="rect"></div>
+          <div class="agreementText" style="opacity: 0.8">
+            Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </label>
+      </div>
+
+      <button class="button button--yellow formBtn px-3">
+        Отправить заявку
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modalReviews -->
+<div class="modal" id="modalReviews">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-4 pb-3"><span>Расскажите,</span> понравилось ли вам обслуживание?</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="d-flex gap-2">
+      <button class="button button--yellow px-3" data-fancybox data-src="#modalThanks">
+        Да, все отлично
+      </button>
+      <button class="button button--white px-3" data-fancybox data-src="#modalBad">
+        Нет, есть претензии
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modalThanks -->
+<div class="modal" id="modalThanks">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-4"><span>Спасибо! </span></h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h4 class="color-white mb-4">Оставьте о нас отзыв:</h4>
+    <div class="d-flex gap-2">
+      <div class="reviewsCardItem">
+        <div class="d-flex align-items-center flex-wrap justify-content-between fz-8 mb-6">
+          <a class="color-grey30 fw-semibold hover-black" href="#" target="_blank">Оценка в 2ГИС</a>
+          <a class="color-grey60 fw-semibold hover-black" href="#">Оставить отзыв</a>
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-between">
+          <div class="d-flex align-items-center gap-1">
+            <img class="flex-shrink-0" src="img/icons/2gis.svg" alt="icon">
+            <span class="fw-semibold">4,7</span>
+          </div>
+          <img src="img/admin/reviews/star-1.svg" alt="stars">
+        </div>
+      </div>
+      <div class="reviewsCardItem">
+        <div class="d-flex align-items-center flex-wrap justify-content-between fz-8 mb-6">
+          <a class="color-grey30 fw-semibold hover-black" href="#" target="_blank">Оценка в Яндекс</a>
+          <a class="color-grey60 fw-semibold hover-black" href="#">Оставить отзыв</a>
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-between">
+          <div class="d-flex align-items-center gap-1">
+            <img class="flex-shrink-0" src="img/icons/yandex.svg" alt="icon">
+            <span class="fw-semibold">4,4</span>
+          </div>
+          <img src="img/admin/reviews/star-2.svg" alt="stars">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modalBad -->
+<div class="modal" id="modalBad">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-4">Что испортило впечатление?</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="modalForm">
+      <div class="form-floating inputW mb-3">
+        <input type="text" id="modalBadName" class="form-control formInput border-grey60" placeholder="Имя">
+        <label for="modalBadName">Имя</label>
+      </div>
+      <div class="form-floating inputW mb-3">
+        <input type="tel" id="modalBadPhone" class="form-control formInput border-grey60"
+          placeholder="+7 (___) ___-__-__">
+        <label for="modalBadPhone">Телефон</label>
+      </div>
+      <div class="form-floating inputW mb-3">
+        <input type="email" id="modalBadMail" class="form-control formInput border-grey60" placeholder="Email">
+        <label for="modalBadMail">Email</label>
+      </div>
+      <div class="form-floating inputW mb-4 pb-2">
+        <textarea class="form-control formText border-grey60" name="modalBadText" id="modalBadText"
+          placeholder="Комментарий" style="height: 96px;"></textarea>
+        <label for="modalBadText">Комментарий</label>
+      </div>
+
+      <div class="agreement mb-4">
+        <input id="modalBad_agree" type="checkbox">
+        <label for="modalBad_agree">
+          <div class="rect"></div>
+          <div class="agreementText" style="opacity: 0.8">
+            Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </label>
+      </div>
+
+      <button class="button button--yellow formBtn px-3" data-fancybox data-src="#modalSended">
+        Отправить
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modalSended -->
+<div class="modal" id="modalSended">
+
+  <div class="modalHead">
+    <h2 class="h2 mb-4"><span>Ваш отзыв отправлен! </span></h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h4 class="color-white mb-40">Спасибо, что помогаете нам становиться лучше.</h4>
+    <button data-fancybox-close class="button button--yellow px-5" title="Close">
+      Закрыть
+    </button>
+  </div>
+</div>
+
+<!-- modalDetail -->
+<div class="modal" id="modalDetail">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h3 class="h3 mb-10">
+      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+    </h3>
+    <div class="lh-150 color-grey60 mb-20">
+      Арт.: 12*****890
+    </div>
+    <div class="modalDetailImgW mb-20">
+      <img src="img/admin/catalog/image-1.png" alt="image" class="modalDetailImg">
+      <div class="sale">Акция!</div>
+    </div>
+    <div class="d-flex align-items-center gap-10 mb-20">
+      <div class="productSale">
+        -35%
+      </div>
+      <div class="h3 mb-0">
+        3 035 ₽
+      </div>
+      <div class="color-grey60 line-through">
+        125 000 ₽
+      </div>
+    </div>
+    <div class="d-flex gap-1 mb-3">
+      <img src="img/icons/checked.svg" alt="icon">
+      <div class="fz-12 color-grey60">
+        Есть в наличии
+      </div>
+      <div class="fz-12 fw-medium">
+        15 шт.
+      </div>
+    </div>
+    <div class="d-flex gap-3 align-items-center justify-content-between mb-5">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200">
+        <input type="number" class="formInput catalogCardRowCount w-100 font-family" value="1" min="1">
+        <div class="d-flex flex-column">
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-up"></use>
+            </svg>
+          </button>
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button class="productAddToCart button button--grey90 color-primary px-3 gap-12">
+        <svg class="w-24 h-24" style="fill: var(--primary); stroke: var(--primary);">
+          <use xlink:href="img/icons/icons.svg#cart"></use>
+        </svg>
+        В корзину
+      </button>
+    </div>
+    <a class="fw-medium lh-150 d-flex justify-content-center gap-12 text-link-opacity-85" href="#" target="_blank">
+      Открыть в новом окне
+      <svg class="w-24 h-24" style="fill: transparent; stroke: var(--main-color);">
+        <use xlink:href="img/icons/icons.svg#btn-link"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

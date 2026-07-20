@@ -1,0 +1,61 @@
+<div class="catalogCardRow flex-row">
+
+  <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+    <div class="d-flex gap-12">
+      <a href="#" class="catalogCardRowImg">
+        <img src="@img/admin/catalog/image-1.png" alt="image">
+        <div class="tag">
+          Акция!
+        </div>
+      </a>
+      <div class="d-flex flex-column gap-2">
+        <a href="#" class="catalogCardRowTitle fw-medium">
+          Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+        </a>
+        <div class="available d-flex align-items-center gap-1 fz-12 color-grey60">
+          <img src="@img/icons/checked.svg" alt="icon">
+          Есть в наличии
+          <span class="fz-12 fw-medium color-black">15 шт. </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex gap-12 align-items-center">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+        <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+        <div class="d-flex flex-column">
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-up"></use>
+            </svg>
+          </button>
+          <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+            onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quant-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+        <div class="h5 mb-0">
+          303 500 ₽
+        </div>
+        <div class="color-grey30 line-through fz-14">
+          425 000 ₽
+        </div>
+      </div>
+      <div class="catalogCardRowBtnW">
+        <button class="catalogCardBtn button button--grey90 px-3 gap-12">
+          <svg style="fill: #fff; stroke: #fff;">
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          В корзину
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

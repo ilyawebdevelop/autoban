@@ -1,0 +1,72 @@
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  padding-bottom: 20px;
+}
+
+.accordion-button {
+  padding: 0;
+  background-color: transparent;
+  color: var(--grey90);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 0;
+  transition: color .2s linear;
+  column-gap: 5px;
+
+  @media(max-width: 991px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: var(--black);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+}
+
+.accordion-body {
+  padding: 0;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grey60);
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--main-color);
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button::after {
+  background-image: url('@img/icons/plus.svg');
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('@img/icons/minus.svg');
+  transform: rotate(0deg);
+}

@@ -1,0 +1,588 @@
+<!-- Header -->
+<header class="header" id="header">
+  <div class="headerT py-2 ">
+    <div class="container">
+      <div class="d-flex gap-3 align-items-center justify-content-between">
+        @@include('header/nav.html',{})
+        <div class="d-flex gap-2 align-items-center">
+          <a href="tel:+73952788630" class="headerPhone">
+            <img src="@img/icons/phone.svg" alt="icon">
+            +7 (3952) 78-86-30
+          </a>
+          <div class="fz-12 color-grey30">
+            с 09.00 до 20.00 (Иркутск, МСК+5)
+          </div>
+          <div class="socials">
+            <ul class="d-flex gap-2 align-items-center">
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="@img/admin/socials/icon-1.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="@img/admin/socials/icon-2.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="@img/admin/socials/icon-3.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="@img/admin/socials/icon-4.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="@img/admin/socials/icon-5.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="button button--grey60 h-24 fz-12 gap-1 px-12 color-primary fw-normal" data-fancybox
+            data-src="#modalWrite">
+            <img src="@img/icons/message.svg" alt="icon">
+            Написать нам
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerB py-20">
+    <div class="container">
+      <div class="d-flex gap-20 align-items-center position-relative">
+        <a href="#" class="headerLogo logo">
+          <img src="@img/admin/logo/header-logo.svg" alt="logo">
+        </a>
+        <button class="headerCatalogBtn button button--yellow px-3">
+          <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.6px;">
+            <use xlink:href="img/icons/icons.svg#catalog"></use>
+          </svg>
+          Каталог
+        </button>
+        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+          <img class="ml-2 searchIcon" src="@img/icons/search.svg" alt="icon">
+          <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
+          <button class="search-clear" type="button"><img src="@img/icons/search-clear.svg" alt="icon"></button>
+          <button class="searchBtn button button--sm button--grey90 px-3 fz-12 fw-normal">
+            Искать
+          </button>
+        </div>
+        <a href="#" class="headerCartBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          <span class="count">2</span>
+        </a>
+        <div class="headerCartMenu">
+          <div class="headerCartMenuList">
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="@img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="@img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      303 500 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      425 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="@img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="@img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="@img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      3 035 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="@img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="@img/admin/cat/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="@img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      3 035 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      125 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="@img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="cartItem border-0 flex-row">
+
+              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+                <div class="d-flex gap-12">
+                  <a href="#" class="catalogCardRowImg">
+                    <img src="@img/admin/catalog/image-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column gap-2">
+                    <a href="#" class="catalogCardRowTitle fw-medium">
+                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+                    </a>
+                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="@img/icons/checked.svg" alt="icon">
+                        Есть в наличии
+                        <span class="fz-12 fw-medium color-black">15 шт. </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-12 align-items-start flex-shrink-0">
+                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
+                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
+                    <div class="d-flex flex-column">
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
+                        </svg>
+                      </button>
+                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+                        <svg>
+                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+                    <div class="h5 mb-0">
+                      303 500 ₽
+                    </div>
+                    <div class="color-grey30 line-through fz-14">
+                      425 000 ₽
+                    </div>
+                  </div>
+                  <button type="button" class="cartItemRemove mt-1">
+                    <img src="@img/icons/cart-remove.svg" alt="icon">
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="headerCartMenuFooter pt-3">
+            <div class="d-flex justify-content-between align-items-start gap-3">
+              <h5 class="mb-0">
+                Итого
+              </h5>
+              <div class="d-flex flex-column align-items-end catalogCardRowPriceW mb-3">
+                <div class="h5 mb-0">
+                  312 695 ₽
+                </div>
+                <div class="color-grey30 line-through fz-14">
+                  1 2500 000 ₽
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="fz-14 color-grey60">
+                Перейдите в корзину, чтобы рассчитать стоимость доставки и применить скидки и бонусы
+              </div>
+              <button class="button button--grey90 px-3 flex-shrink-0">
+                Перейти в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headerCatalog">
+      <div class="container">
+        <div class="headerCatalogGrid">
+          <div class="headerCatalogL">
+            <div class="tabs_2" data-tabs="popup_2">
+              <ul class="tabs__nav mb-3">
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По типу</button></li>
+                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По модели</button></li>
+              </ul>
+              <div class="tabs__content">
+                <div class="tabs__panel">
+                  @@include('header/catalog-nav-type.html',{})
+                </div>
+                <div class="tabs__panel">
+                  @@include('header/catalog-nav-model.html',{})
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="headerCatalogR">
+            <div class="headerCatalogContent" data-menu="1">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Двигатель и комплектующие
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Топливная система</a></li>
+                  <li><a href="#">Система выпуска</a></li>
+                  <li><a href="#">Система охлаждения ДВС</a></li>
+                  <li><a href="#">Блоки цилиндров, ГБЦ и картеры</a></li>
+                  <li><a href="#">Крепление и защита двигателя</a></li>
+                  <li><a href="#">Поршни, шатуны, кольца, вкладыши</a></li>
+                  <li><a href="#">Система смазки</a></li>
+                  <li><a href="#">Коленвалы, распредвалы и маховики</a></li>
+                  <li><a href="#">ГРМ</a></li>
+                  <li><a href="#">Турбины, компрессоры</a></li>
+                  <li><a href="#">Система зажигания</a></li>
+                  <li><a href="#">Двигатели в сборе</a></li>
+                  <li><a href="#">Система впуска</a></li>
+                  <li><a href="#">Система кондиционирования и отопления</a></li>
+                  <li><a href="#">Стартеры и генераторы</a></li>
+                  <li><a href="#">Прокладки и Сальники</a></li>
+                  <li><a href="#">Ролики и ремни</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="2">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Трансмиссия
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Сцепление</a></li>
+                  <li><a href="#">КПП в сборе</a></li>
+                  <li><a href="#">Детали КПП</a></li>
+                  <li><a href="#">Механизмы отбора мощности</a></li>
+                  <li><a href="#">Карданный вал, привод и полуось</a></li>
+                  <li><a href="#">Редуктор, муфта и дифференциалы</a></li>
+                  <li><a href="#">Подшипники и крестовины</a></li>
+                  <li><a href="#">Раздаточная коробка ZQC2000-57K</a></li>
+
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/cat/image-2.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="3">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Подвеска и рулевое управление
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Рулевые рейки и усилители</a></li>
+                  <li><a href="#">Рычаги и шаровые опоры</a></li>
+                  <li><a href="#">Пальцы и шкворни</a></li>
+                  <li><a href="#">Амортизаторы и пружины</a></li>
+                  <li><a href="#">Рессоры и листы</a></li>
+                  <li><a href="#">Балки, стабилизаторы и балансиры</a></li>
+                  <li><a href="#">Рулевые тяги и наконечники</a></li>
+                  <li><a href="#">Кулаки и ступицы</a></li>
+                  <li><a href="#">Втулки и сайлентблоки</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="4">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Кабина
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Кабина в сборе</a></li>
+                  <li><a href="#">Окна и стёкла</a></li>
+                  <li><a href="#">Внешние элементы кабины</a></li>
+                  <li><a href="#">Подвеска кабины</a></li>
+                  <li><a href="#">Зеркала</a></li>
+                  <li><a href="#">Двери</a></li>
+                  <li><a href="#">Крылья</a></li>
+                  <li><a href="#">Капот</a></li>
+                  <li><a href="#">Бампера</a></li>
+                  <li><a href="#">Детали салона</a></li>
+                  <li><a href="#">Сиденья и спальники</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/cat/image-3.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="5">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Рама, кузов, надстройки
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Топливные баки</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="6">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Электрика и свет
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#">Фонари и фары</a></li>
+                  <li><a href="#">Электронные блоки управления</a></li>
+                  <li><a href="#">Электропроводка</a></li>
+                  <li><a href="#">Контроллеры, реле и датчики</a></li>
+                  <li><a href="#">Аккумуляторы</a></li>
+                  <li><a href="#">Телематика, тахографы и рации</a></li>
+                  <li><a href="#">Электродвигатели и актуаторы</a></li>
+                  <li><a href="#">Кнопки, переключатели</a></li>
+                </ul>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="7">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Гидравлические и пневмосистемы
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="8">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Тормозная система
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+            <div class="headerCatalogContent" data-menu="9">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                  <h4 class="mb-0">
+                    Сальники
+                  </h4>
+                  <a href="#" class="button button--grey00 h-40 px-12 fw-medium fz-14 gap-2 color-black">
+                    Все товары раздела
+                    <svg style="fill: transparent; width: 20px; height: 20px; stroke-width: 1.5px;">
+                      <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                    </svg>
+                  </a>
+                </div>
+              </nav>
+              <div class="headerCatalogContentImageW">
+                <img src="@img/admin/menu/image-1.png" alt="image" class="headerCatalogContentImage">
+                <img src="@img/icons/rect-card.svg" alt="rect" class="rect">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
