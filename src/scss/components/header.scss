@@ -63,8 +63,15 @@
     align-items: center;
     gap: 4px;
 
+
     &.gap-12 {
       gap: 12px;
+
+      &.gap-sm-8 {
+        @media(max-width: 575px) {
+          gap: 8px;
+        }
+      }
     }
 
     &:hover {
@@ -269,5 +276,65 @@
     bottom: 0;
     right: 0;
     width: 120px;
+  }
+}
+
+.headerMainMobile {
+  display: flex;
+
+  @media(max-width: 991px) {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: var(--grey90);
+    height: 100vh;
+    z-index: 3;
+    flex-direction: column;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+}
+
+.headerMobilePhone {
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.headerMobileMessage {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerMobileSearchW {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 3;
+  flex-direction: column;
+  left: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  display: none;
+  overflow-y: scroll;
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
   }
 }

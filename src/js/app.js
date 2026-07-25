@@ -64,35 +64,38 @@ searchInputArray.forEach(el => {
     el.focus();
     clearValue.classList.remove('active');
   });
-
 });
 
+const mediaQueryMax991 = window.matchMedia('(max-width: 991px)');
+const mediaQueryMin992 = window.matchMedia('(min-width: 992px)');
+if (mediaQueryMin992.matches) {
+  // Инициализация слайдера introAdvSlider
+  const introAdvSlider = document.querySelector('.introAdvSlider');
+  var mySwiperIntroAdv = new Swiper(introAdvSlider, {
+    slidesPerView: 3,
+    speed: 600,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false, // Не останавливать после клика
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 8,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
 
-// Инициализация слайдера introAdvSlider
-const introAdvSlider = document.querySelector('.introAdvSlider');
-var mySwiperIntroAdv = new Swiper(introAdvSlider, {
-  slidesPerView: 3,
-  speed: 600,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false, // Не останавливать после клика
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 8,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});
 
 // Инициализация слайдера introSlider
 const introSlider = document.querySelector('.introSlider');
@@ -117,10 +120,10 @@ var mySwiperCat = new Swiper(catSlider, {
   slidesPerView: 2,
   speed: 600,
   spaceBetween: 20,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false, // Не останавливать после клика
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false, // Не останавливать после клика
+  // },
   navigation: {
     prevEl: catSlider?.closest('.sliderW').querySelector('.navArrowPrev'),
     nextEl: catSlider?.closest('.sliderW').querySelector('.navArrowNext'),
@@ -136,8 +139,11 @@ var mySwiperCat = new Swiper(catSlider, {
     },
     992: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
+    1200: {
+      spaceBetween: 20,
+    }
   },
 });
 
@@ -217,6 +223,10 @@ var mySwiperReviews = new Swiper(reviewsSlider, {
       slidesPerView: 2,
       spaceBetween: 10,
     },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
@@ -241,15 +251,12 @@ var mySwiperNews = new Swiper(newsSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 8,
     },
-    576: {
+    768: {
       slidesPerView: 2,
-      spaceBetween: 10,
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 20,
     },
   },
 });
@@ -328,9 +335,6 @@ headerCartBtn.addEventListener('click', () => {
 
 
 // catalog menu show
-const mediaQueryMax991 = window.matchMedia('(max-width: 991px)');
-const mediaQueryMin992 = window.matchMedia('(min-width: 992px)');
-
 const navLinks = document.querySelectorAll('.headerCatalogNavLink');
 const menuContents = document.querySelectorAll('.headerCatalogContent');
 let headerCatalogClose = document.querySelector('.headerCatalogClose');
@@ -419,3 +423,77 @@ if (mediaQueryMin992.matches) {
     clearTimeout(timer);
   });
 }
+
+let navBarCatalogBtn = document.querySelector('.navBarCatalogBtn');
+
+navBarCatalogBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  headerCatalogMenu.classList.toggle('active');
+  navBarCatalogBtn.closest('li').classList.toggle('active');
+  bodyEl.classList.toggle('hidden');
+});
+
+headerCatalogClose?.addEventListener('click', () => {
+  headerCatalogMenu.classList.remove('active');
+  bodyEl.classList.remove('hidden');
+  navBarCatalogBtn.closest('li').classList.remove('active');
+});
+
+
+// Burger
+const btnMenu = document.querySelector('#toggle');
+// const searchMenuBtnAll = document.querySelectorAll('.searchMobileAction');
+const menu = document.querySelector('.headerMainMobile');
+// const searchMenu = document.querySelector('.headerSearchMobile');
+const bodyEl = document.querySelector('body');
+const btnClose = document.querySelector('.headerMainMobileClose');
+// const searchClose = document.querySelector('.headerSearchMobileClose');
+
+const toggleMobileMenu = function () {
+  menu.classList.toggle('active');
+}
+const toggleBurger = function () {
+  btnMenu.classList.toggle('active');
+}
+const bodyOverflow = function () {
+  bodyEl.classList.toggle('hidden');
+}
+const menuClose = function () {
+  toggleBurger();
+  bodyOverflow();
+  toggleMobileMenu();
+}
+
+btnMenu?.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMobileMenu();
+  toggleBurger();
+  bodyOverflow();
+});
+
+btnClose?.addEventListener('click', function (e) {
+  menuClose();
+});
+
+let headerMobileSearchW = document.querySelector('.headerMobileSearchW');
+let headerSearchBtn = document.querySelector('.headerSearchBtn');
+let headerMainMobileSearchBtn = document.querySelector('.headerMainMobileSearchBtn');
+let headerSearchBtnClose = document.querySelector('.headerMobileSearchBack');
+
+const headerMobileSearchToggle = function () {
+  headerMobileSearchW.classList.toggle('active');
+}
+
+headerSearchBtn?.addEventListener('click', () => {
+  headerMobileSearchToggle();
+  bodyOverflow();
+});
+headerMainMobileSearchBtn?.addEventListener('click', () => {
+  headerMobileSearchToggle();
+  bodyOverflow();
+});
+
+headerSearchBtnClose?.addEventListener('click', () => {
+  headerMobileSearchToggle();
+  bodyOverflow();
+});

@@ -1,4 +1,9 @@
 .catalog {
+  &Slider {
+    @media(max-width: 575px){
+      overflow: visible;
+    }
+  }
   &Slide {
     height: auto;
 
@@ -15,7 +20,11 @@
       position: relative;
       padding: 19px;
       display: flex;
+      justify-content: center;
       margin-bottom: 10px;
+      @media(max-width: 991px){
+        padding: 10px;
+      }
 
       &:hover {
         opacity: .85;
@@ -24,6 +33,9 @@
       img {
         object-fit: contain;
         height: 160px;
+        @media(max-width: 1400px){
+          height: 100px;
+        }
       }
     }
 
@@ -42,6 +54,10 @@
       display: -webkit-box;
       /* Включаем флексбоксы */
       -webkit-box-orient: vertical;
+      @media(max-width: 991px){
+        font-size: 12px;
+        line-height: 16px;
+      }
 
       &:hover {
         color: #000;

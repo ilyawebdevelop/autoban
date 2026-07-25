@@ -70,7 +70,11 @@ section {
     padding-top: 0;
   }
 }
-
+.pb-lg-70 {
+  @media(max-width: 991px){
+    padding-bottom: 70px;
+  }
+}
 .formText {
   padding: 12px 16px 12px;
   width: 100%;
@@ -200,6 +204,18 @@ section {
   color: rgba($color: #000000, $alpha: .2);
 }
 
+.color-sm-primary {
+  @media(max-width: 575px) {
+    color: var(--primary) !important;
+  }
+}
+
+.color-sm-grey30 {
+  @media(max-width: 575px) {
+    color: var(--grey30) !important;
+  }
+}
+
 .opacity-80 {
   opacity: .8;
 }
@@ -252,6 +268,10 @@ a.underline {
   min-height: 100%;
   position: relative;
   background-color: #fff;
+
+  @media(max-width: 991px) {
+    padding-bottom: 63px;
+  }
 }
 
 .main {
@@ -324,6 +344,13 @@ a.underline {
   padding-bottom: 20px !important;
 }
 
+.py-lg-16 {
+  @media(max-width: 991px) {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+
 .px-6 {
   padding-left: 6px;
   padding-right: 6px;
@@ -350,6 +377,12 @@ a.underline {
   padding-top: 20px;
 }
 
+.pt-sm-0px {
+  @media(max-width: 575px) {
+    padding-top: 0;
+  }
+}
+
 .pl-52 {
   padding-left: 52px;
 }
@@ -368,6 +401,12 @@ a.underline {
 
 .ml-auto {
   margin-left: auto;
+
+  &.ml-xl-unset {
+    @media(max-width: 1199px) {
+      margin-left: unset;
+    }
+  }
 }
 
 .mt-auto {
@@ -389,7 +428,11 @@ a.underline {
 .mt-40 {
   margin-top: 40px;
 }
-
+.mt-lg-24 {
+  @media(max-width: 991px){
+    margin-top: 24px;
+  }
+}
 .mb-6 {
   margin-bottom: 6px;
 }
@@ -404,6 +447,30 @@ a.underline {
 
 .mb-20 {
   margin-bottom: 20px;
+
+  &.mb-xl-10 {
+    @media(max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &.mb-lg-40 {
+    @media(max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &.mb-lg-20 {
+    @media(max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.mb-sm-24 {
+    @media(max-width: 575px) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .mb-30 {
@@ -418,6 +485,12 @@ a.underline {
   margin-bottom: 40px;
 }
 
+.mb-lg-24 {
+  @media(max-width: 991px) {
+    margin-bottom: 24px;
+  }
+}
+
 .gap-6 {
   gap: 6px;
 }
@@ -428,14 +501,62 @@ a.underline {
 
 .gap-12 {
   gap: 12px;
+
+  &.gap-sm-8 {
+    @media(max-width: 575px) {
+      gap: 8px;
+    }
+  }
 }
 
 .gap-20 {
   gap: 20px;
+
+  &.gap-xl-10 {
+    @media(max-width: 1199px) {
+      gap: 10px;
+    }
+  }
+
+  &.gap-lg-16 {
+    @media(max-width: 991px) {
+      gap: 16px;
+    }
+  }
+
+  &.gap-lg-8 {
+    @media(max-width: 991px) {
+      gap: 8px;
+    }
+  }
+
+  &.gap-390-8 {
+    @media(max-width: 390px) {
+      gap: 8px;
+    }
+  }
 }
 
 .gap-40 {
   gap: 40px;
+
+  &.gap-xxl-20 {
+    @media(max-width: 1400px) {
+      gap: 20px;
+    }
+  }
+
+  &.gap-lg-40 {
+    @media(max-width: 991px) {
+      gap: 40px;
+    }
+  }
+
+  &.gap-lg-24 {
+    @media(max-width: 991px) {
+      gap: 24px;
+    }
+  }
 }
 
 .gap-120 {
@@ -452,6 +573,11 @@ a.underline {
   line-height: normal;
 }
 
+.fz-13 {
+  font-size: 13px;
+  line-height: normal;
+}
+
 .fz-14 {
   font-size: 14px;
   line-height: 143%;
@@ -465,10 +591,34 @@ a.underline {
 .fz-80 {
   font-size: 80px;
   line-height: normal;
+
+  @media(max-width: 1600px) {
+    font-size: 60px;
+  }
+
+  @media(max-width: 1400px) {
+    font-size: 50px;
+  }
+}
+
+.fz-sm-18 {
+  @media(max-width: 575px) {
+    font-size: 18px !important;
+  }
+}
+
+.fz-sm-16 {
+  @media(max-width: 575px) {
+    font-size: 16px !important;
+  }
 }
 
 .lh-150 {
   line-height: 150%;
+}
+
+.lh-normal {
+  line-height: normal;
 }
 
 .bg--grey00 {
@@ -511,6 +661,18 @@ a.underline {
   width: 320px;
 }
 
+.w-sm-24 {
+  @media(max-width: 575px) {
+    width: 24px;
+  }
+}
+
+.w-375-150 {
+  @media(max-width: 375px) {
+    width: 150px !important;
+  }
+}
+
 .h-32 {
   height: 32px;
 }
@@ -547,9 +709,16 @@ h1,
   line-height: 56px;
   font-weight: 700;
 
-
   @media(max-width: 1199px) {
     font-size: 24px;
+    line-height: 32px;
+  }
+
+  &.h1-xl-h2 {
+    @media(max-width: 1199px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 }
 
@@ -559,7 +728,15 @@ h2,
   font-weight: 700;
 
   @media(max-width: 1199px) {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+  &.h2-xl-h4 {
+    @media(max-width: 1199px){
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -1189,4 +1366,8 @@ h6,
 .errorContent {
   padding-left: 30px;
   position: relative;
+}
+
+.text-no-uppercase {
+  text-transform: none;
 }

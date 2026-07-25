@@ -20,11 +20,11 @@
 	<div class="wrapper">
 		<!-- Header -->
 <header class="header" id="header">
-  <div class="headerT py-2 ">
+  <div class="headerT py-lg-2 py-0">
     <div class="container">
-      <div class="d-flex gap-3 align-items-center justify-content-between">
+      <div class="headerMainMobile gap-3 align-items-center justify-content-between">
         <nav class="headerNav">
-  <ul class="d-flex gap-20">
+  <ul class="d-flex gap-20 gap-xl-10">
     <li><a href="#">Оплата и доставка</a></li>
     <li><a href="#">О нас</a></li>
     <li><a href="#">Акции и новости</a></li>
@@ -76,19 +76,30 @@
       </div>
     </div>
   </div>
-  <div class="headerB py-20">
+  <div class="headerB py-20 py-lg-16">
     <div class="container">
-      <div class="d-flex gap-20 align-items-center position-relative">
+      <div
+        class="d-flex gap-20 gap-lg-16 gap-390-8 align-items-center position-relative justify-content-between justify-content-lg-start">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <button class="headerSearchBtn d-flex align-items-center justify-content-center d-lg-none">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
         <a href="#" class="headerLogo logo">
-          <img src="img/admin/logo/header-logo.svg" alt="logo">
+          <img class="w-375-150" src="img/admin/logo/header-logo.svg" alt="logo">
         </a>
-        <button class="headerCatalogBtn button button--yellow px-3">
+        <button class="headerCatalogBtn d-none d-lg-flex button button--yellow px-3">
           <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.6px;">
             <use xlink:href="img/icons/icons.svg#catalog"></use>
           </svg>
           Каталог
         </button>
-        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+        <div class="searchField d-none d-lg-flex position-relative w-100 bg--grey00 gap-12 p-2">
           <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
           <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
           <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
@@ -96,11 +107,21 @@
             Искать
           </button>
         </div>
-        <a href="#" class="headerCartBtn">
+        <a href="#" class="headerCartBtn d-none d-lg-flex">
           <svg>
             <use xlink:href="img/icons/icons.svg#cart"></use>
           </svg>
           <span class="count">2</span>
+        </a>
+        <a href="tel:73822726723" class="d-flex d-lg-none headerMobilePhone">
+          <svg style="width: 20px; height: 20px; fill: transparent; stroke: #fff; stroke-width: 1.5px;">
+            <use xlink:href="img/icons/icons.svg#phone"></use>
+          </svg>
+        </a>
+        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalOrder">
+          <svg style="width: 20px; height: 20px; fill: transparent; stroke: #fff; stroke-width: 1.5px;">
+            <use xlink:href="img/icons/icons.svg#message"></use>
+          </svg>
         </a>
         <div class="headerCartMenu">
           <div class="headerCartMenuList">
@@ -747,6 +768,35 @@
         </div>
       </div>
     </div>
+    <div class="headerMobileSearchW">
+  <div class="headerMobileSearchTop border-b-gray py-2">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <button class="headerMobileSearchBack" type="button">
+          <img src="img/icons/prev-arrow.svg" alt="icon">
+        </button>
+        <div class="searchField position-relative w-100">
+          <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+          <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerMobileSearchContent">
+    <div class="container">
+      <div class="d-flex gap-2 py-4 flex-wrap">
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Диваны</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Мебель-трансформер 3в1</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кровати</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Матрасы</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Шкафы</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кухни</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Столы и стулья</a>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </header>
 		<main class="main">
@@ -1195,10 +1245,10 @@
   </div>
 </section>
 		
-			<section class="news sect pt-0 sliderW">
+			<section class="news sect pt-4 pt-lg-0 sliderW">
   <div class="container">
 
-    <div class="mb-32 d-flex justify-content-between align-items-center gap-4">
+    <div class="mb-32 mb-lg-24 d-flex justify-content-between align-items-center gap-4">
       <h2 class="h2 mb-0">
         Акции и новости
       </h2>
@@ -1216,7 +1266,7 @@
       </div>
     </div>
 
-    <div class="swiper newsSlider mb-32">
+    <div class="swiper newsSlider mb-32 mb-lg-24">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide newsSlide">
@@ -1234,7 +1284,7 @@
   <a href="#" class="newsCardImg mb-3 d-flex">
     <img src="img/admin/news/image-2.jpg" alt="image">
   </a>
-  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Запрет продаж автомобилей марки SHACMAN?</a>
   <div class="newsCardDate">21 июня 2026</div>
 </div>
         </div>
@@ -1264,7 +1314,7 @@
   <a href="#" class="newsCardImg mb-3 d-flex">
     <img src="img/admin/news/image-2.jpg" alt="image">
   </a>
-  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Запрет продаж автомобилей марки SHACMAN?</a>
   <div class="newsCardDate">21 июня 2026</div>
 </div>
         </div>
@@ -1284,7 +1334,7 @@
   <a href="#" class="newsCardImg mb-3 d-flex">
     <img src="img/admin/news/image-2.jpg" alt="image">
   </a>
-  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Запрет продаж автомобилей марки SHACMAN?</a>
   <div class="newsCardDate">21 июня 2026</div>
 </div>
         </div>
@@ -1314,7 +1364,7 @@
   <a href="#" class="newsCardImg mb-3 d-flex">
     <img src="img/admin/news/image-2.jpg" alt="image">
   </a>
-  <a href="#" class="newsCardTitle mb-2 d-flex">ГК «АвтоБан» получила награду «Выдающийся партнёр» на конференции Shacman в Шэньси</a>
+  <a href="#" class="newsCardTitle mb-2 d-flex">Запрет продаж автомобилей марки SHACMAN?</a>
   <div class="newsCardDate">21 июня 2026</div>
 </div>
         </div>
@@ -1322,7 +1372,7 @@
       </div>
     </div>
 
-    <a href="#" class="button button--grey00 px-3 ml-auto">
+    <a href="#" class="button button--grey00 px-3 ml-auto ml-xl-unset">
       Все публикации
       <svg class="w-20 h-20" style="fill: transparent; stroke-width: 1.5px;">
         <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
@@ -1335,16 +1385,16 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 order-2 order-lg-1 mt-2 mt-lg-0">
         <div class="d-flex gap-4 flex-column justify-content-between h-100">
-          <h2 class="h2">
+          <h2 class="h2 d-none d-lg-block">
             Часто задаваемые вопросы
           </h2>
-          <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-4 gap-lg-3">
             <div class="color-grey60" style="max-width: 555px;">
               Если вы не нашли ответ на свой вопрос — позвоните нам! Проконсультируем и подробно обо всём расскажем.
             </div>
-            <div class="d-flex gap-2 align-items-center">
+            <div class="d-flex gap-2 align-items-start align-items-sm-center flex-column flex-sm-row">
               <a class="d-flex gap-12 hover-opacity fw-medium" href="tel:+73952788630">
                 <img src="img/icons/phone.svg" alt="icon">
                 +7 (3952) 78-86-30
@@ -1355,10 +1405,11 @@
             </div>
           </div>
         </div>
-
-
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 order-1 order-lg-2">
+        <h2 class="h2 d-block d-lg-none mb-32">
+          Часто задаваемые вопросы
+        </h2>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
@@ -1388,7 +1439,7 @@
             <h4 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Как подобрать запчасти? 2
+                Как подобрать запчасти? 2 Как подобрать запчасти? 2 Как подобрать запчасти? 2
               </button>
             </h4>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -1437,7 +1488,7 @@
   <div class="footerT">
     <div class="container">
       <nav class="footerNav mb-40">
-        <ul class="d-flex gap-40">
+        <ul class="d-flex flex-column flex-lg-row gap-40 gap-lg-24">
           <li><a href="#">О нас</a></li>
           <li><a href="#">Акции и новости</a></li>
           <li><a href="#">Оплата и доставка</a></li>
@@ -1445,7 +1496,7 @@
         </ul>
       </nav>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-xl-3 order-3 order-sm-1 pt-4 mt-3 pt-sm-0 mt-sm-0">
           <div class="mb-20 color-grey30 fw-semibold">
             Свяжитесь с нами:
           </div>
@@ -1479,32 +1530,34 @@
                 </li>
               </ul>
             </div>
-            <button class="button button--grey60 h-24 fz-12 gap-1 px-12 color-primary fw-normal w-100">
-              <img src="img/icons/message.svg" alt="icon">
+            <button
+              class="button button--grey60 h-24 h-sm-48 fz-12 fz-sm-16 gap-2 gap-sm-1 px-12 color-primary fw-normal w-100">
+              <img class="w-sm-24" src="img/icons/message.svg" alt="icon">
               Написать нам
             </button>
           </div>
 
         </div>
-        <div class="col-lg-3">
-          <a href="mailto:info@avtoban38.ru" class="headerPhone gap-12 mb-20">
-            <img src="img/icons/mail.svg" alt="icon">
+        <div class="col-sm-6 col-xl-3 order-2">
+          <a href="mailto:info@avtoban38.ru"
+            class="headerPhone color-sm-grey30 gap-12 mb-20 mb-sm-24 fz-sm-16 mt-4 mt-sm-0">
+            <img class="contactIcon" src="img/icons/mail.svg" alt="icon">
             info@avtoban38.ru
           </a>
-          <a href="tel:+73952788630" class="headerPhone gap-12">
-            <img src="img/icons/phone.svg" alt="icon">
+          <a href="tel:+73952788630" class="headerPhone color-sm-primary gap-12 gap-sm-8 fz-sm-18">
+            <img class="contactIcon" src="img/icons/phone.svg" alt="icon">
             +7 (3952) 78-86-30
           </a>
           <span class="fz-12 color-grey30 footerWork">с 09.00 до 20.00 (Иркутск, МСК+5)</span>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-xl-3 mt-0 mt-sm-5 mt-xl-0 order-1 order-sm-3">
           <div class="d-flex align-items-start gap-12 color-grey30 fw-medium">
-            <img src="img/icons/place.svg" alt="icon">
+            <img class="contactIcon" src="img/icons/place.svg" alt="icon">
             664084, Иркутская область,<br> Иркутский район, д. Малая Еланка, Пролетарская улица, 1Б
           </div>
         </div>
-        <div class="col-lg-3">
-          <button class="button button--yellow px-3 ml-auto">
+        <div class="col-sm-6 col-xl-3 mt-5 mt-xl-0 order-4">
+          <button class="button button--yellow px-3 ml-auto ml-xl-unset">
             Заказать обратный звонок
           </button>
         </div>
@@ -1513,8 +1566,9 @@
   </div>
   <div class="footerB">
     <div class="container">
-      <div class="d-flex align-items-center gap-40">
-        <div class="d-flex gap-20">
+      <div
+        class="d-flex align-items-start align-items-xxl-center gap-40 gap-xxl-20 gap-lg-40 flex-column flex-xxl-row flex-wrap">
+        <div class="d-flex gap-20 gap-lg-8 flex-column flex-lg-row">
           <span>© ООО «А+Б Импорт»</span>
           <span>ИНН: 7536185797</span>
           <a class="underline hover-white" href="#">Соглашение на обработку персональных данных</a>
@@ -1531,6 +1585,43 @@
     </div>
   </div>
 </footer>
+
+<nav class="navBar d-block d-lg-none">
+  <ul>
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#home-menu"></use>
+        </svg>
+        <span>Главная</span>
+      </a>
+    </li>
+    <li>
+      <a class="navBarCatalogBtn" href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog"></use>
+        </svg>
+        <span>Каталог</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cart"></use>
+        </svg>
+        <span>Корзина</span>
+      </a>
+    </li>
+    <li class="navbarAboutItem">
+      <a href="#">
+        <svg style="fill: var(--grey30); stroke: var(--grey30); stroke-width: 1px;">
+          <use xlink:href="img/icons/icons.svg#about"></use>
+        </svg>
+        <span>О нас</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 		<!-- modal -->
 <!-- modalWrite -->
 <div class="modal" id="modalWrite">

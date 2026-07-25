@@ -87,7 +87,11 @@
   &.h-48 {
     height: 48px;
   }
-
+&.h-sm-48 {
+  @media(max-width: 575px){
+    height: 48px;
+  }
+}
   svg {
     width: 16px;
     height: 16px;
@@ -236,5 +240,19 @@
 .cartOrderSubmitBtn {
   &:disabled {
     border: 1px solid var(--grey30);
+  }
+}
+
+.headerSearchBtn {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+
+  svg {
+    fill: transparent;
+    stroke: var(--white);
+    width: 28px;
+    height: 28px;
+    stroke-width: 1.5px;
   }
 }

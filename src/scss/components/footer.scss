@@ -4,6 +4,14 @@
     background-color: #2c2d2e;
     padding-top: 20px;
     padding-bottom: 40px;
+
+    @media(max-width: 991px) {
+      padding-top: 40px;
+    }
+
+    @media(max-width: 575px) {
+      padding-bottom: 45px;
+    }
   }
 
   &B {
@@ -34,6 +42,11 @@
           line-height: 143%;
           color: #fff;
 
+          @media(max-width: 991px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+
           &:hover {
             color: var(--primary);
           }
@@ -53,6 +66,17 @@
           align-items: center;
           justify-content: center;
 
+          @media(max-width: 575px) {
+            width: 40px;
+            height: 40px;
+          }
+
+          img {
+            @media(max-width: 575px) {
+              width: 21px;
+            }
+          }
+
           &:hover {
             background-color: var(--grey30);
           }
@@ -64,7 +88,103 @@
 
 .footerMeta {
   max-width: 665px;
+
+  @media(max-width: 1600px) {
+    max-width: 400px;
+  }
+
+  @media(max-width: 1400px) {
+    max-width: 100%;
+  }
 }
+
 .footerWork {
   margin-left: 37px;
+
+  @media(max-width: 575px) {
+    margin-left: 0;
+  }
+}
+
+.contactIcon {
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.navBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #000;
+  border-top: 1px solid var(--gey60);
+  padding-top: 4px;
+  z-index: 2;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 6px;
+
+    @media(max-width: 575px) {
+      justify-content: space-between;
+    }
+
+    li {
+      flex: 1;
+      &.navbarAboutItem {
+        &.active {
+          a {
+            svg {
+              fill: #000!important;
+            }
+          }
+        }
+      }
+      &.active {
+        a {
+          color: var(--primary);
+          svg {
+            background-color: var(--primary);
+            stroke: #000!important;
+           
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 8px;
+        font-size: 12px;
+        line-height: 130%;
+        padding-top: 8px;
+        padding-bottom: 4px;
+        color: var(--grey30);
+
+        &:hover {
+
+          svg {
+            stroke: var(--orange);
+          }
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: transparent;
+          stroke: var(--grey30);
+          stroke-width: 1.5px;
+        }
+      }
+    }
+  }
 }

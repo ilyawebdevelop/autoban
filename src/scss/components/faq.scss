@@ -17,7 +17,7 @@
   column-gap: 5px;
 
   @media(max-width: 991px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   &:hover {
@@ -39,6 +39,10 @@
   font-size: 14px;
   line-height: 143%;
   color: var(--grey60);
+
+  .content>p {
+    color: var(--grey60);
+  }
 }
 
 .accordion-item:first-of-type>.accordion-header .accordion-button {

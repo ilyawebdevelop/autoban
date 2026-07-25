@@ -1,13 +1,29 @@
 .reviews {
+  &Slider {
+    @media(max-width: 575px){
+      overflow: visible;
+      padding-right: 40px;
+    }
+  }
   &Slide {
     padding: 24px 13px;
     border: 1px solid var(--grey30);
+    @media(max-width: 575px){
+     padding-top: 10px;
+     padding-bottom: 10px; 
+    }
 
     img {
       height: 420px;
       width: 100%;
       object-fit: contain;
       object-position: top;
+      @media(max-width: 1400px){
+        height: 300px;
+      }
+      @media(max-width: 575px){
+        height: 380px;
+      }
     }
   }
 }
