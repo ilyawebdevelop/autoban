@@ -9,12 +9,34 @@
   }
 
   &Nav {
+    @media(max-width: 991px) {
+      width: 100%;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media(max-width: 767px) {
+      max-width: 540px;
+    }
+
+    @media(max-width: 575px) {
+      max-width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
     ul {
       li {
         a {
           font-size: 12px;
           line-height: 133%;
           color: var(--white);
+
+          @media(max-width: 991px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
 
           &:hover {
             color: var(--primary);
@@ -47,8 +69,19 @@
           align-items: center;
           justify-content: center;
 
+          @media(max-width: 991px) {
+            width: 40px;
+            height: 40px;
+          }
+
           &:hover {
             background-color: var(--grey30);
+          }
+
+          img {
+            @media(max-width: 991px) {
+              width: 21px;
+            }
           }
         }
       }
@@ -62,7 +95,9 @@
     display: flex;
     align-items: center;
     gap: 4px;
-
+    @media(max-width: 991px){
+      gap: 8px;
+    }
 
     &.gap-12 {
       gap: 12px;
@@ -74,6 +109,16 @@
       }
     }
 
+    &.fz-lg-18 {
+      @media(max-width: 991px) {
+        font-size: 18px;
+      }
+    }
+    img {
+      @media(max-width: 991px){
+        width: 24px;
+      }
+    }
     &:hover {
       color: var(--primary);
     }
@@ -96,15 +141,7 @@
   }
 }
 
-.headerCatalog {
-  display: none;
 
-  &.active {
-    display: block;
-    -webkit-animation: shows 0.2s;
-    animation: shows 0.2s;
-  }
-}
 
 .headerCartMenuList {
   overflow-y: auto;
@@ -118,12 +155,14 @@
 
 /* Ширина скроллбара */
 .headerCartMenuList::-webkit-scrollbar,
+.headerCatalogNav::-webkit-scrollbar,
 .headerCatalogContentNav::-webkit-scrollbar {
   width: 4px;
 }
 
 /* Цвет фона самого канала скроллбара (дорожки) */
 .headerCartMenuList::-webkit-scrollbar-track,
+.headerCatalogNav::-webkit-scrollbar-track,
 .headerCatalogContentNav::-webkit-scrollbar-track {
   background: #f1f1f1;
   /* Можно сделать transparent, если нужен прозрачный фон */
@@ -131,6 +170,7 @@
 
 /* Цвет самого ползунка (то, что двигаем) */
 .headerCartMenuList::-webkit-scrollbar-thumb,
+.headerCatalogNav::-webkit-scrollbar-thumb,
 .headerCatalogContentNav::-webkit-scrollbar-thumb {
   background: #C2C2C2;
   border-radius: 2px;
@@ -139,6 +179,7 @@
 
 /* Цвет ползунка при наведении */
 .headerCartMenuList::-webkit-scrollbar-thumb:hover,
+.headerCatalogNav::-webkit-scrollbar-thumb:hover,
 .headerCatalogContentNav::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
@@ -149,6 +190,13 @@
 }
 
 .headerCatalog {
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+
+  display: none;
   padding: 0 40px;
   background: var(--white);
   position: absolute;
@@ -156,6 +204,15 @@
   width: 100%;
   z-index: 2;
   box-shadow: 1px 15px 27px -12px rgba(34, 60, 80, 0.3);
+
+  @media(max-width: 991px) {
+    position: fixed;
+    top: 0;
+    height: calc(100vh - 63px);
+    overflow-y: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .headerCatalogGrid {
@@ -167,6 +224,15 @@
   width: 370px;
   flex-shrink: 0;
   border-right: 1px solid #e2e6ea;
+
+  @media(max-width: 1199px) {
+    width: 320px;
+  }
+
+  @media(max-width: 991px) {
+    width: 100%;
+    border-right: none;
+  }
 
   .tabs__nav-item {
     width: 50%;
@@ -180,14 +246,29 @@
 .headerCatalogR {
   width: calc(100% - 355px);
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 0;
   padding-top: 40px;
+
+  @media(max-width: 1199px) {
+    width: calc(100% - 320px);
+    padding-left: 20px;
+  }
+
+  @media(max-width: 991px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .headerCatalogNav {
   padding-bottom: 30px;
   max-height: 500px;
   overflow-y: auto;
+
+  @media(max-width: 991px) {
+    overflow: unset;
+    max-height: unset;
+  }
 }
 
 .headerCatalogNavLink {
@@ -204,6 +285,17 @@
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: right 16px center;
+  line-height: 22px;
+
+  @media(max-width: 1199px) {
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media(max-width: 991px) {
+    border-bottom: 1px solid var(--grey00);
+  }
 
   &:hover {
     background-color: #f2f4f6;
@@ -224,6 +316,30 @@
 }
 
 .headerCatalogContent {
+  display: none;
+
+  @media(max-width: 991px) {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 67px;
+    background-color: #fff;
+    height: calc(100vh - 124px);
+    overflow-y: auto;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    @media(max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.headerCatalogContent .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -233,6 +349,19 @@
   max-height: 500px;
   overflow-y: auto;
   padding-bottom: 30px;
+  padding-right: 30px;
+
+  @media(max-width: 1199px) {
+    padding-right: 20px;
+    grid-column: 7 span;
+  }
+
+  @media(max-width: 991px) {
+    overflow: unset;
+    max-height: unset;
+    grid-column: 12 span;
+    padding-right: 0;
+  }
 
   ul {
     li {
@@ -243,6 +372,20 @@
         padding-bottom: 8px;
         display: flex;
         width: fit-content;
+
+        @media(max-width: 1199px) {
+          font-size: 15px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
+
+        @media(max-width: 991px) {
+          padding-left: 52px;
+          padding-right: 12px;
+          border-bottom: 1px solid var(--grey00);
+          width: 100%;
+          line-height: 20px;
+        }
 
         &:hover {
           color: var(--main-color);
@@ -265,10 +408,32 @@
   margin-left: 5px;
   height: fit-content;
 
+  @media(max-width: 1400px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media(max-width: 1199px) {
+    grid-column: 5 span;
+  }
+
+  @media(max-width: 991px) {
+    display: none;
+  }
+
   .headerCatalogContentImage {
     height: 300px;
     width: 350px;
     object-fit: contain;
+
+    @media(max-width: 1400px) {
+      width: 200px;
+      height: 250px;
+    }
+
+    @media(max-width: 1199px) {
+      height: 200px;
+    }
   }
 
   .rect {
@@ -276,11 +441,16 @@
     bottom: 0;
     right: 0;
     width: 120px;
+
+    @media(max-width: 1199px) {
+      width: 80px;
+    }
   }
 }
 
 .headerMainMobile {
   display: flex;
+  width: 100%;
 
   @media(max-width: 991px) {
     display: none;
@@ -291,7 +461,7 @@
     z-index: 3;
     flex-direction: column;
     left: 0;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 50px;
     overflow-y: scroll;
   }
@@ -336,5 +506,43 @@
     display: flex;
     -webkit-animation: shows 0.2s;
     animation: shows 0.2s;
+  }
+}
+
+.container:has(.headerCatalogGrid) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.headerCatalogContentHeadMobile {
+  @media(max-width: 991px) {
+    background-color: var(--grey00);
+    width: 100%;
+  }
+}
+
+.headerMainMobileClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+
+  svg {
+    width: 26px;
+    height: 26px;
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+}
+
+.headerMainMobileLogo {
+  img {
+    width: 169px;
+  }
+}
+
+.headerContactsMobile {
+  @media(max-width: 991px) {
+    width: 100%;
   }
 }

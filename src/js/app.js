@@ -335,7 +335,7 @@ headerCartBtn.addEventListener('click', () => {
 
 
 // catalog menu show
-const navLinks = document.querySelectorAll('.headerCatalogNavLink');
+const navLinks = document.querySelectorAll('.headerCatalogNav--inner .headerCatalogNavLink');
 const menuContents = document.querySelectorAll('.headerCatalogContent');
 let headerCatalogClose = document.querySelector('.headerCatalogClose');
 
@@ -357,21 +357,20 @@ navLinks.forEach(link => {
       }
     });
   }
-  // if (mediaQueryMax991.matches) {
-  //   const target = link.getAttribute('data-menu');
-  //   const activeMenu = document.querySelector(`.headerCatalogContent[data-menu="${target}"]`);
-  //   const prevMenu = activeMenu.querySelector('.headerCatalogContentPrev');
-  //   link.addEventListener('click', (e) => {
-  //     e.preventDefault();
-  //     if (activeMenu) {
-  //       activeMenu.style.display = 'block';
-  //     }
-  //   });
-  //   prevMenu?.addEventListener('click', (e) => {
-  //     activeMenu.style.display = 'none';
-
-  //   });
-  // }
+  if (mediaQueryMax991.matches) {
+    const target = link.getAttribute('data-menu');
+    const activeMenu = document.querySelector(`.headerCatalogContent[data-menu="${target}"]`);
+    const prevMenu = activeMenu.querySelector('.headerCatalogContentPrev');
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (activeMenu) {
+        activeMenu.style.display = 'block';
+      }
+    });
+    prevMenu?.addEventListener('click', (e) => {
+      activeMenu.style.display = 'none';
+    });
+  }
 });
 
 // Опционально: скрыть меню, если мышь ушла из всей области навигации

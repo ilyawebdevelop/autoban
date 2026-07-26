@@ -138,22 +138,33 @@
 
     li {
       flex: 1;
+
       &.navbarAboutItem {
         &.active {
           a {
+
             svg {
-              fill: #000!important;
+              fill: #000 !important;
+            }
+          }
+        }
+
+        a {
+          &:hover {
+            svg {
+              fill: var(--primary) !important;
             }
           }
         }
       }
+
       &.active {
         a {
           color: var(--primary);
+
           svg {
             background-color: var(--primary);
-            stroke: #000!important;
-           
+            stroke: #000 !important;
           }
         }
       }
@@ -173,7 +184,7 @@
         &:hover {
 
           svg {
-            stroke: var(--orange);
+            stroke: var(--primary);
           }
         }
 

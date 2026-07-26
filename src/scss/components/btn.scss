@@ -87,11 +87,19 @@
   &.h-48 {
     height: 48px;
   }
-&.h-sm-48 {
-  @media(max-width: 575px){
-    height: 48px;
+
+  &.h-lg-48 {
+    @media(max-width: 991px) {
+      height: 48px;
+    }
   }
-}
+
+  &.h-sm-48 {
+    @media(max-width: 575px) {
+      height: 48px;
+    }
+  }
+
   svg {
     width: 16px;
     height: 16px;
@@ -116,6 +124,11 @@
 
   &:disabled {
     pointer-events: none;
+  }
+  &.w-lg-232 {
+    @media(max-width: 991px){
+      width: 232px;
+    }
   }
 }
 
@@ -254,5 +267,15 @@
     width: 28px;
     height: 28px;
     stroke-width: 1.5px;
+  }
+}
+
+.headerCatalogContentPrev {
+  width: 20px;
+  flex-shrink: 0;
+  display: none;
+
+  @media(max-width: 991px) {
+    display: flex;
   }
 }
