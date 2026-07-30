@@ -16505,6 +16505,7 @@ h6,
 }
 .headerB {
   background-color: var(--grey90);
+  transition: all 0.2s linear;
 }
 @media (max-width: 991px) {
   .headerB {
@@ -16516,6 +16517,9 @@ h6,
 }
 .headerB:has(.headerCatalog.active) {
   transform: none !important;
+}
+.headerB.header--hidden {
+  transform: translateY(-100%);
 }
 @media (max-width: 991px) {
   .headerNav {

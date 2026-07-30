@@ -6,14 +6,21 @@
 
   &B {
     background-color: var(--grey90);
-    @media(max-width: 991px){
+    transition: all .2s linear;
+
+    @media(max-width: 991px) {
       position: fixed;
       width: 100%;
       z-index: 111;
       top: 0;
     }
-    &:has(.headerCatalog.active){
-      transform: none!important;
+
+    &:has(.headerCatalog.active) {
+      transform: none !important;
+    }
+
+    &.header--hidden {
+      transform: translateY(-100%);
     }
   }
 
@@ -104,7 +111,8 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       gap: 8px;
     }
 
@@ -123,14 +131,17 @@
         font-size: 18px;
       }
     }
+
     img {
-      @media(max-width: 991px){
+      @media(max-width: 991px) {
         width: 24px;
       }
     }
+
     &:hover {
       color: var(--primary);
     }
+
     &.color-primary {
       &:hover {
         opacity: .9;
@@ -560,9 +571,11 @@
     width: 100%;
   }
 }
+
 .headerMobileSearchTop {
   background-color: var(--grey90);
 }
+
 .headerMobileSearchBack {
   width: 32px;
   height: 32px;

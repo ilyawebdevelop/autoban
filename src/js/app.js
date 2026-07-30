@@ -502,48 +502,26 @@ headerSearchBtnClose?.addEventListener('click', () => {
 
 // mobile header
 if (window.innerWidth < 992) {
-  const header = document.querySelector('.headerB');
   let lastScrollY = window.scrollY;
-  let ticking = false;
+  const headerb = document.querySelector('.headerB');
+  const scrollThreshold = 10; // порог, чтобы не дёргалось от мелких скроллов
 
-  // Функция управления показом/скрытием шапки
-  function handleScroll() {
+  window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
 
-    if (currentScrollY < lastScrollY) {
-      // Скролл вверх — показываем шапку
-      header.style.transform = 'translateY(0)';
+    if (Math.abs(currentScrollY - lastScrollY) < scrollThreshold) {
+      return;
+    }
+
+    if (currentScrollY > lastScrollY && currentScrollY > headerb.offsetHeight) {
+      // скролл вниз — прячем
+      headerb.classList.add('header--hidden');
     } else {
-      // Скролл вниз — скрываем шапку
-      header.style.transform = 'translateY(-100%)';
+      // скролл вверх — показываем
+      headerb.classList.remove('header--hidden');
     }
 
     lastScrollY = currentScrollY;
-    ticking = false;
-  }
-
-  // Обработчик для оптимизации
-  function onScroll() {
-    if (!ticking) {
-      window.requestAnimationFrame(handleScroll);
-      ticking = true;
-    }
-  }
-
-  // Изначально скрываем шапку (если нужно)
-  header.style.transition = 'transform 0.3s ease';
-
-  window.addEventListener('scroll', onScroll);
-
-  // При изменении размера окна — включаем/выключаем поведение
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 991) {
-      // Можно оставить шапку всегда видимой или скрытой
-      header.style.transform = '';
-    } else {
-      // Не перекрываем старое поведение
-      // Можно оставить как есть
-    }
   });
 }
 
