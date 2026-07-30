@@ -1,6 +1,6 @@
 <div class="catalogCardRow flex-row">
 
-  <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
+  <div class="d-flex gap-3 align-items-start align-items-lg-center w-100 justify-content-between">
     <div class="d-flex gap-12">
       <a href="#" class="catalogCardRowImg">
         <img src="@img/admin/cat/image-1.png" alt="image">
@@ -18,7 +18,7 @@
 
     <div class="d-flex gap-12 align-items-center">
       <div class="position-relative flex-shrink-0 catalogCardRowCountW">
-        <input type="number" class="formInput catalogCardRowCount" value="5" min="1">
+        <input type="number" class="formInput catalogCardRowCount" value="5" min="1" max="50">
         <div class="d-flex flex-column">
           <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
             onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
@@ -40,11 +40,11 @@
         </div>
       </div>
       <div class="catalogCardRowBtnW">
-        <button class="catalogCardBtn button button--grey00 px-12 gap-2">
+        <button class="catalogCardBtn button button--grey00 px-12 px-md-0px gap-2">
           <svg style="fill: transparent; stroke: var(--grey90); stroke-width: 1.5px;">
             <use xlink:href="img/icons/icons.svg#time"></use>
           </svg>
-          Заказать
+          <span class="d-none d-md-block">Заказать</span>
         </button>
       </div>
 

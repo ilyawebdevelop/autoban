@@ -5,13 +5,19 @@
   &:not(:last-child){
     margin-bottom: 20px;
   }
-
   .sep {
     border-bottom: 1px dashed var(--grey60);
   }
 }
 .cartContent {
   padding-right: 60px;
+  @media(max-width: 1400px){
+    padding-right: 20px;
+  }
+  @media(max-width: 991px){
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
 }
 .cartItem {
   padding-top: 12px;
@@ -23,6 +29,9 @@
 }
 .checkout-toggle {
   padding: 20px 40px;
+  @media(max-width: 1199px){
+    padding: 20px;
+  }
 }
 .checkout-toggle {
   display: none;

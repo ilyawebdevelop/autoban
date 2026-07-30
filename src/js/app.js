@@ -278,19 +278,21 @@ var mySwiperClients = new Swiper(clientsSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 8,
     },
     576: {
-      spaceBetween: 10,
-      slidesPerView: 1,
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
     },
     992: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 4,
     },
     1200: {
+      slidesPerView: 5,
+    },
+    1400: {
       slidesPerView: 6,
-      spaceBetween: 20,
     },
   },
 });
@@ -495,4 +497,93 @@ headerMainMobileSearchBtn?.addEventListener('click', () => {
 headerSearchBtnClose?.addEventListener('click', () => {
   headerMobileSearchToggle();
   bodyOverflow();
+});
+
+
+// mobile header
+if (window.innerWidth < 992) {
+  const header = document.querySelector('.headerB');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  // Функция управления показом/скрытием шапки
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < lastScrollY) {
+      // Скролл вверх — показываем шапку
+      header.style.transform = 'translateY(0)';
+    } else {
+      // Скролл вниз — скрываем шапку
+      header.style.transform = 'translateY(-100%)';
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  // Обработчик для оптимизации
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  }
+
+  // Изначально скрываем шапку (если нужно)
+  header.style.transition = 'transform 0.3s ease';
+
+  window.addEventListener('scroll', onScroll);
+
+  // При изменении размера окна — включаем/выключаем поведение
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 991) {
+      // Можно оставить шапку всегда видимой или скрытой
+      header.style.transform = '';
+    } else {
+      // Не перекрываем старое поведение
+      // Можно оставить как есть
+    }
+  });
+}
+
+const loadMoreButtons = document.querySelectorAll('.catalogCatLoadMore');
+
+loadMoreButtons.forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Находим родительский контейнер
+    const parent = this.closest('.catalog-tags-action');
+    if (!parent) return;
+
+    // Находим список и span с текстом внутри этого родителя
+    const tagsList = parent.querySelector('.catalog-tags');
+    const btnSpan = this.querySelector('span');
+
+    // Переключаем класс .active у списка
+    tagsList.classList.toggle('active');
+
+    // Меняем текст в зависимости от наличия класса
+    if (tagsList.classList.contains('active')) {
+      btnSpan.textContent = 'Свернуть';
+    } else {
+      btnSpan.textContent = 'Показать полностью';
+    }
+  });
+});
+
+// sidebar catalog show mobile
+let catalogMobFilterBtn = document.querySelector('.catalogMobFilterBtn');
+let catalogSidebar = document.querySelector('.catalog-sidebar');
+let catalogSidebarClose = document.querySelector('.filterBtnClose');
+
+catalogMobFilterBtn?.addEventListener('click', () => {
+  catalogSidebar.classList.add('active');
+  bodyEl.classList.add('hidden');
+});
+
+catalogSidebarClose?.addEventListener('click', () => {
+  catalogSidebar.classList.remove('active');
+  bodyEl.classList.remove('hidden');
 });

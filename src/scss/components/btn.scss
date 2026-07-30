@@ -94,6 +94,12 @@
     }
   }
 
+  &.h-lg-32 {
+    @media(max-width: 991px) {
+      height: 32px;
+    }
+  }
+
   &.h-sm-48 {
     @media(max-width: 575px) {
       height: 48px;
@@ -125,9 +131,16 @@
   &:disabled {
     pointer-events: none;
   }
+
   &.w-lg-232 {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       width: 232px;
+    }
+  }
+
+  &.w-sm-100 {
+    @media(max-width: 575px) {
+      width: 100%;
     }
   }
 }
@@ -216,9 +229,16 @@
 
 .catalogCardRowBtnW {
   min-width: 160px;
+  @media(max-width: 767px){
+    min-width: unset;
+  }
 
   .button {
     margin-left: auto;
+    @media(max-width: 767px){
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -240,6 +260,11 @@
 
 .productAddToCart {
   width: 200px;
+  &.w-lg-160 {
+    @media(max-width: 991px){
+      width: 160px;
+    }
+  }
 }
 
 .cartItemRemove {
@@ -277,5 +302,60 @@
 
   @media(max-width: 991px) {
     display: flex;
+  }
+}
+
+.catalogCatLoadMore {
+  padding-right: 12px;
+  padding-left: 6px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  display: none;
+  font-weight: 500;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5px;
+  }
+
+  span {
+    border-bottom: 1px dashed var(--grey60);
+
+  }
+
+  @media(max-width: 991px) {
+    display: flex;
+  }
+}
+
+.filterBtnClose {
+
+  &:focus,
+  &:hover,
+  &:active {
+    svg {
+      stroke: var(--primary);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: var(--grey90);
+  }
+}
+.dropdown-toggle {
+  background-image: none;
+  &::after {
+    display: none;
+  }
+}
+.errorBtn  {
+  @media(max-width: 991px){
+    width: 100%;
+    flex: unset!important;
   }
 }

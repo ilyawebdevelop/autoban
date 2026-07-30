@@ -154,7 +154,7 @@
             <use xlink:href="img/icons/icons.svg#phone"></use>
           </svg>
         </a>
-        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalOrder">
+        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalWrite">
           <svg style="width: 20px; height: 20px; fill: transparent; stroke: #fff; stroke-width: 1.5px;">
             <use xlink:href="img/icons/icons.svg#message"></use>
           </svg>
@@ -884,29 +884,29 @@
       </div>
     </div>
     <div class="headerMobileSearchW">
-  <div class="headerMobileSearchTop border-b-gray py-2">
+  <div class="headerMobileSearchTop border-b-gray py-12">
     <div class="container">
-      <div class="d-flex align-items-center">
-        <button class="headerMobileSearchBack" type="button">
-          <img src="img/icons/prev-arrow.svg" alt="icon">
-        </button>
-        <div class="searchField position-relative w-100">
-          <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+      <div class="d-flex gap-3 align-items-center">
+        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+          <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
+          <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
           <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+          <button class="searchBtn button button--sm button--grey90 px-3 fz-12 fw-normal">
+            Искать
+          </button>
         </div>
+        <button class="headerMobileSearchBack" type="button">
+          <img src="img/icons/close-white.svg" alt="icon">
+        </button>
       </div>
     </div>
   </div>
-  <div class="headerMobileSearchContent">
+  <div class="headerMobileSearchContent px-2">
     <div class="container">
       <div class="d-flex gap-2 py-4 flex-wrap">
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Диваны</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Мебель-трансформер 3в1</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кровати</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Матрасы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Шкафы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кухни</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Столы и стулья</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Двигатель и комплектующие</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Трансмиссия</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Подвеска и рулевое управление</a>
       </div>
     </div>
   </div>
@@ -915,7 +915,7 @@
   </div>
 </header>
 		<main class="main">
-			<section class="breadcrumbsSect py-20 mb-20" id="breadcrumbs">
+			<section class="breadcrumbsSect py-20 pt-lg-35 mb-20" id="breadcrumbs">
 
   <div class="container">
     <div class="breadcrumbs">
@@ -962,7 +962,7 @@
 
 
 </section>
-			<section class="sect pt-0">
+			<section class="sect pt-0 pb-lg-70">
   <div class="container">
 
     <div class="sectHead">
@@ -972,208 +972,225 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-9">
+      <div class="col-lg-8 col-xxl-9">
         <div class="cartContent">
           <div class="cartList mb-40">
 
-            <div class="cartItem flex-row">
+  <div class="cartItem flex-row">
 
-              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
-                <div class="d-flex gap-12">
-                  <a href="#" class="catalogCardRowImg">
-                    <img src="img/admin/catalog/image-1.png" alt="image">
-                    <div class="tag">
-                      Акция!
-                    </div>
-                  </a>
-                  <div class="d-flex flex-column gap-2">
-                    <a href="#" class="catalogCardRowTitle fw-medium">
-                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
-                    </a>
-                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
-                      <div class="fz-12 color-grey60">
-                        Арт.: 12*****890
-                      </div>
-                      <div class="d-flex gap-1 align-items-center">
-                        <img src="img/icons/checked.svg" alt="icon">
-                        Есть в наличии
-                        <span class="fz-12 fw-medium color-black">15 шт. </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex gap-12 align-items-center flex-shrink-0">
-                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
-                    <input type="number" class="formInput catalogCardRowCount" value="1" min="1">
-                    <div class="d-flex flex-column">
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
-                        </svg>
-                      </button>
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
-                    <div class="h5 mb-0">
-                      303 500 ₽
-                    </div>
-                    <div class="color-grey30 line-through fz-14">
-                      425 000 ₽
-                    </div>
-                  </div>
-                  <button type="button" class="cartItemRemove">
-                    <img src="img/icons/cart-remove.svg" alt="icon">
-                  </button>
-
-                </div>
-              </div>
-
+    <div
+      class="d-flex gap-3 align-items-start align-items-lg-center w-100 justify-content-between flex-column flex-lg-row">
+      <div class="d-flex gap-12 gap-lg-10 align-items-start w-100">
+        <a href="#" class="catalogCardRowImg d-block">
+          <img src="img/admin/catalog/image-1.png" alt="image">
+          <div class="tag">
+            Акция!
+          </div>
+        </a>
+        <div class="d-flex flex-column gap-2">
+          <a href="#" class="catalogCardRowTitle fw-medium">
+            Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+          </a>
+          <div class="available d-flex align-items-center gap-1 gap-sm-2 gap-md-3 fz-12 color-grey60 flex-wrap">
+            <div class="fz-12 color-grey60">
+              Арт.: 12*****890
             </div>
-            <div class="cartItem flex-row">
-
-              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
-                <div class="d-flex gap-12">
-                  <a href="#" class="catalogCardRowImg">
-                    <img src="img/admin/cat/image-1.png" alt="image">
-                  </a>
-                  <div class="d-flex flex-column gap-2">
-                    <a href="#" class="catalogCardRowTitle fw-medium">
-                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
-                    </a>
-                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
-                      <div class="fz-12 color-grey60">
-                        Арт.: 12*****890
-                      </div>
-                      <div class="d-flex gap-1 align-items-center">
-                        <img src="img/icons/checked.svg" alt="icon">
-                        Есть в наличии
-                        <span class="fz-12 fw-medium color-black">125 шт. </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex gap-12 align-items-center flex-shrink-0">
-                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
-                    <input type="number" class="formInput catalogCardRowCount" value="2" min="1">
-                    <div class="d-flex flex-column">
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
-                        </svg>
-                      </button>
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
-                    <div class="h5 mb-0">
-                      6 070 ₽
-                    </div>
-                  </div>
-                  <button type="button" class="cartItemRemove">
-                    <img src="img/icons/cart-remove.svg" alt="icon">
-                  </button>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="cartItem flex-row">
-
-              <div class="d-flex gap-3 align-items-center w-100 justify-content-between">
-                <div class="d-flex gap-12">
-                  <a href="#" class="catalogCardRowImg">
-                    <img src="img/admin/cat/image-1.png" alt="image">
-                  </a>
-                  <div class="d-flex flex-column gap-2">
-                    <a href="#" class="catalogCardRowTitle fw-medium">
-                      Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150) Амортизатор кабины задний
-                      F3000/Х3000 Shacman (DZ13241440150)
-                    </a>
-                    <div class="available d-flex align-items-center gap-3 fz-12 color-grey60">
-                      <div class="fz-12 color-grey60">
-                        Арт.: 12*****890
-                      </div>
-                      <div class="d-flex gap-1 align-items-center">
-                        <img src="img/icons/checked.svg" alt="icon">
-                        Есть в наличии
-                        <span class="fz-12 fw-medium color-black">125 шт. </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex gap-12 align-items-center flex-shrink-0">
-                  <div class="position-relative flex-shrink-0 catalogCardRowCountW">
-                    <input type="number" class="formInput catalogCardRowCount" value="2" min="1">
-                    <div class="d-flex flex-column">
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-up"></use>
-                        </svg>
-                      </button>
-                      <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
-                        onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
-                        <svg>
-                          <use xlink:href="img/icons/icons.svg#quant-down"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
-                    <div class="h5 mb-0">
-                      303 500 ₽
-                    </div>
-                  </div>
-                  <button type="button" class="cartItemRemove">
-                    <img src="img/icons/cart-remove.svg" alt="icon">
-                  </button>
-
-                </div>
-              </div>
-
+            <div class="d-flex gap-1 align-items-center">
+              <img src="img/icons/checked.svg" alt="icon">
+              Есть в наличии
+              <span class="fz-12 fw-medium color-black">15 шт. </span>
             </div>
           </div>
+        </div>
+        <button type="button" class="cartItemRemove d-block d-lg-none ml-auto">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+      </div>
+
+      <div
+        class="d-flex gap-12 gap-lg-10 align-items-start align-items-center flex-shrink-0 pl-lg-80 w-lg-100 justify-content-between justify-content-lg-start">
+        <div class="position-relative flex-shrink-0 catalogCardRowCountW d-flex">
+          <input type="number" class="formInput catalogCardRowCount w-lg-100" value="1" min="1">
+          <div class="d-flex flex-column">
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-up"></use>
+              </svg>
+            </button>
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+          <div class="h5 mb-0">
+            303 500 ₽
+          </div>
+          <div class="color-grey30 line-through fz-14">
+            425 000 ₽
+          </div>
+        </div>
+        <button type="button" class="cartItemRemove d-none d-lg-block">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="cartItem flex-row">
+
+    <div
+      class="d-flex gap-3 align-items-start align-items-lg-center w-100 justify-content-between flex-column flex-lg-row">
+      <div class="d-flex gap-12 gap-lg-10 align-items-start w-100">
+        <a href="#" class="catalogCardRowImg d-block">
+          <img src="img/admin/cat/image-1.png" alt="image">
+        </a>
+        <div class="d-flex flex-column gap-2">
+          <a href="#" class="catalogCardRowTitle fw-medium">
+            Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
+          </a>
+          <div class="available d-flex align-items-center gap-1 gap-sm-2 gap-md-3 fz-12 color-grey60 flex-wrap">
+            <div class="fz-12 color-grey60">
+              Арт.: 12*****890
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+              <img src="img/icons/checked.svg" alt="icon">
+              Есть в наличии
+              <span class="fz-12 fw-medium color-black">125 шт. </span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="cartItemRemove d-block d-lg-none ml-auto">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+      </div>
+
+      <div
+        class="d-flex gap-12 gap-lg-10 align-items-start align-items-center flex-shrink-0 pl-lg-80 w-lg-100 justify-content-between justify-content-lg-start">
+        <div class="position-relative flex-shrink-0 catalogCardRowCountW d-flex">
+          <input type="number" class="formInput catalogCardRowCount w-lg-100" value="2" min="1">
+          <div class="d-flex flex-column">
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-up"></use>
+              </svg>
+            </button>
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+          <div class="h5 mb-0">
+            6 070 ₽
+          </div>
+        </div>
+        <button type="button" class="cartItemRemove d-none d-lg-block">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="cartItem flex-row">
+
+    <div
+      class="d-flex gap-3 align-items-start align-items-lg-center w-100 justify-content-between flex-column flex-lg-row">
+      <div class="d-flex gap-12 gap-lg-10 align-items-start w-100">
+        <a href="#" class="catalogCardRowImg d-block">
+          <img src="img/admin/cat/image-1.png" alt="image">
+        </a>
+        <div class="d-flex flex-column gap-2">
+          <a href="#" class="catalogCardRowTitle fw-medium">
+            Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150) Амортизатор кабины задний
+            F3000/Х3000 Shacman (DZ13241440150)
+          </a>
+          <div class="available d-flex align-items-center gap-1 gap-sm-2 gap-md-3 fz-12 color-grey60 flex-wrap">
+            <div class="fz-12 color-grey60">
+              Арт.: 12*****890
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+              <img src="img/icons/checked.svg" alt="icon">
+              Есть в наличии
+              <span class="fz-12 fw-medium color-black">125 шт. </span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="cartItemRemove d-block d-lg-none ml-auto">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+      </div>
+
+      <div
+        class="d-flex gap-12 gap-lg-10 align-items-start align-items-center flex-shrink-0 pl-lg-80 w-lg-100 justify-content-between justify-content-lg-start">
+        <div class="position-relative flex-shrink-0 catalogCardRowCountW d-flex">
+          <input type="number" class="formInput catalogCardRowCount w-lg-100" value="2" min="1">
+          <div class="d-flex flex-column">
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepUp();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-up"></use>
+              </svg>
+            </button>
+            <button class="catalogCardRowQuantBtn catalogCardRowQuantMinus"
+              onclick="this.closest('.catalogCardRowCountW').querySelector('input').stepDown();">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#quant-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-end catalogCardRowPriceW">
+          <div class="h5 mb-0">
+            303 500 ₽
+          </div>
+        </div>
+        <button type="button" class="cartItemRemove d-none d-lg-block">
+          <img src="img/icons/cart-remove.svg" alt="icon">
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
           <div class="mb-40">
-            <h3 class="mb-20">
+            <h3 class="mb-20 h3-xl-h4">
               Доставка
             </h3>
             <div class="d-flex flex-column gap-10">
               <div class="checkout-radio-item">
                 <input type="radio" name="delivery_1" id="delivery_1" checked>
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="delivery_1">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">Самовывоз со склада</div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">Самовывоз со склада</div>
                   </div>
-                  <div class="color-grey90">Пролетарская улица, 1Б, д. Малая Еланка</div>
+                  <div class="color-grey90 pl-xl-37 fz-lg-12 text-start text-xl-end">Пролетарская улица, 1Б, д. Малая Еланка</div>
                 </label>
               </div>
               <div class="checkout-radio-item">
                 <input type="radio" name="delivery_1" id="delivery_2">
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="delivery_2">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">Курьером </div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">Курьером </div>
                   </div>
-                  <div class="color-grey90">по Иркутску</div>
+                  <div class="color-grey90 pl-xl-37 fz-lg-12 text-start text-xl-end">по Иркутску</div>
                 </label>
                 <div class="checkout-toggle bg--grey00 mt-10">
                   <div class="mb-2 fz-12 color-grey60 fw-medium">Адрес доставки (г. Иркутск)</div>
@@ -1185,13 +1202,14 @@
               </div>
               <div class="checkout-radio-item">
                 <input type="radio" name="delivery_1" id="delivery_3">
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="delivery_3">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">Транспортной компанией </div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">Транспортной компанией </div>
                   </div>
-                  <div class="color-grey90">по тарифам ТК (СДЭК, Деловые линии, Энергия, ПЭК, Почта России)</div>
+                  <div class="color-grey90 pl-xl-37 fz-lg-12 text-start text-xl-end">по тарифам ТК (СДЭК, Деловые линии, Энергия, ПЭК, Почта России)</div>
                 </label>
                 <div class="checkout-toggle bg--grey00 mt-10">
                   <div class="mb-2 fz-12 color-grey60 fw-medium">Адрес доставки</div>
@@ -1205,29 +1223,31 @@
             </div>
           </div>
           <div class="mb-40">
-            <h3 class="mb-20">
+            <h3 class="mb-20 h3-xl-h4">
               Оплата
             </h3>
             <div class="d-flex flex-column gap-10">
               <div class="checkout-radio-item">
                 <input type="radio" name="payment" id="payment_1" checked>
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="payment_1">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">При получении </div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">При получении </div>
                   </div>
                 </label>
               </div>
               <div class="checkout-radio-item">
                 <input type="radio" name="payment" id="payment_2">
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="payment_2">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">Онлайн картой </div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">Онлайн картой </div>
                   </div>
-                  <div class="d-flex gap-12">
+                  <div class="d-flex gap-12 pl-xl-37">
                     <img class="payment-logo" src="img/admin/cart/paym-1.svg" alt="logo">
                     <img class="payment-logo" src="img/admin/cart/paym-2.svg" alt="logo">
                     <img class="payment-logo" src="img/admin/cart/paym-3.svg" alt="logo">
@@ -1237,11 +1257,12 @@
               </div>
               <div class="checkout-radio-item">
                 <input type="radio" name="payment" id="payment_3">
-                <label class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-center"
+                <label
+                  class="checkout-label py-20 d-flex gap-1 justify-content-between align-items-start align-items-xl-center flex-column flex-xl-row"
                   for="payment_3">
-                  <div class="d-flex gap-4 align-items-center">
+                  <div class="d-flex gap-3 gap-xl-4 align-items-center">
                     <div class="rect"></div>
-                    <div class="h4 mb-0 color-grey90">Оплата по счету </div>
+                    <div class="h4 h4-xl-18 mb-0 color-grey90">Оплата по счету </div>
                   </div>
 
                 </label>
@@ -1249,10 +1270,10 @@
             </div>
           </div>
           <div class="mb-0">
-            <h3 class="mb-20">
+            <h3 class="mb-20 h3-xl-h4">
               Данные получателя
             </h3>
-            <div class="p-40 bg--grey00 checkout-block-filled">
+            <div class="p-40 p-xxl-20 bg--grey00 checkout-block-filled">
               <div class="row" style="--bs-gutter-x: 20px;">
                 <div class="col-lg-6">
                   <div class="d-flex flex-column gap-2 flex-grow-2">
@@ -1263,7 +1284,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-6 col-xxl-3 mt-3 mt-lg-0">
                   <div class="d-flex flex-column gap-2 flex-grow-1">
                     <span class="color-grey60 fz-12 fw-medium">Email</span>
                     <div class="inputW">
@@ -1272,57 +1293,57 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-6 col-xxl-3 mt-3 mt-xxl-0">
                   <div class="d-flex flex-column gap-2 flex-grow-1">
                     <span class="color-grey60 fz-12 fw-medium">Телефон</span>
                     <div class="inputW">
-                      <input type="tel" class="formInput formInput--white border-grey30"
-                        placeholder="+7 (---) --- ----" value="+7 (911) 234 5678">
+                      <input type="tel" class="formInput formInput--white border-grey30" placeholder="+7 (---) --- ----"
+                        value="+7 (911) 234 5678">
                     </div>
                   </div>
                 </div>
                 <div class="col-12 mt-20">
                   <div class="inputW">
-                    <textarea name="schet_text" id="schet_text" class="formText border-grey30 formText--white" style="height: 84px;" placeholder="Наименование организации, ИНН, КПП, юридический адрес, почтовый адрес, расчетный счет, название банка, БИК, корреспондентский счет.">ООО «Вектор», ИНН 7701234567, КПП 770101001, ОГРН 1027700000000, Юридический адрес: 101000, г. Москва, ул. Примерная, д. 1, Почтовый адрес: 101000, г. Москва, а/я 10, Банк: ПАО «Сбербанк» г. Москва, БИК 044525225, р/с 40702810000000000000, к/с 30101810400000000225.</textarea>
+                    <textarea name="schet_text" id="schet_text" class="formText border-grey30 formText--white"
+                      style="height: 84px;"
+                      placeholder="Наименование организации, ИНН, КПП, юридический адрес, почтовый адрес, расчетный счет, название банка, БИК, корреспондентский счет.">ООО «Вектор», ИНН 7701234567, КПП 770101001, ОГРН 1027700000000, Юридический адрес: 101000, г. Москва, ул. Примерная, д. 1, Почтовый адрес: 101000, г. Москва, а/я 10, Банк: ПАО «Сбербанк» г. Москва, БИК 044525225, р/с 40702810000000000000, к/с 30101810400000000225.</textarea>
                   </div>
                 </div>
               </div>
-   
+
             </div>
           </div>
         </div>
 
       </div>
-      <div class="col-lg-3">
-        <div class="cartOrder p-40 bg--grey00 checkout-block-filled">
-          <h3 class="mb-20">Стоимость заказа</h3>
-          <div class="cartOrderParams mb-32">
+      <div class="col-lg-4 col-xxl-3">
+        <div class="cartOrder p-40 p-xxl-20 bg--grey00 checkout-block-filled">
+          <h3 class="h3-xl-20 mb-20">Стоимость заказа</h3>
+<div class="cartOrderParams mb-32">
 
-            <div class="cartOrderParam">
-              <span class="color-grey60 fw-medium">3 товара</span>
-              <div class="sep"></div>
-              <span class="fw-medium">2 600 000 ₽</span>
-            </div><!-- /cartOrderParam -->
+  <div class="cartOrderParam">
+    <span class="color-grey60 fw-medium">3 товара</span>
+    <div class="sep"></div>
+    <span class="fw-medium">2 600 000 ₽</span>
+  </div><!-- /cartOrderParam -->
 
-            <div class="cartOrderParam">
-              <span class="color-grey60 fw-medium">Скидки</span>
-              <div class="sep"></div>
-              <span class="fw-medium">–1 965 ₽</span>
-            </div><!-- /cartOrderParam -->
+  <div class="cartOrderParam">
+    <span class="color-grey60 fw-medium">Скидки</span>
+    <div class="sep"></div>
+    <span class="fw-medium">–1 965 ₽</span>
+  </div><!-- /cartOrderParam -->
 
-          </div>
-          <div class="d-flex justify-content-between gap-3 align-items-start mb-3">
-            <span class="h5 mb-0">Итого:</span>
-            <div class="d-flex flex-column align-items-end">
-              <span class="h4 mb-0">312 605 ₽</span>
-              <span class="color-grey30 fw-medium line-through">314 570 ₽</span>
-            </div>
-          </div>
-
+</div>
+<div class="d-flex justify-content-between gap-3 align-items-start mb-3">
+  <span class="h5 mb-0">Итого:</span>
+  <div class="d-flex flex-column align-items-end">
+    <span class="h4 h4-lg-20 mb-0">312 605 ₽</span>
+    <span class="color-grey30 fw-medium line-through">314 570 ₽</span>
+  </div>
+</div>
           <button class="button button--grey90 color-primary w-100 cartOrderSubmitBtn">
             Оформить заказ
           </button>
-
         </div>
       </div>
     </div>
@@ -1861,10 +1882,10 @@
   </div>
 
   <div class="modalContent">
-    <h3 class="h3 mb-10">
+    <h3 class="h3 mb-10 h3-xl-20">
       Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
     </h3>
-    <div class="lh-150 color-grey60 mb-20">
+    <div class="lh-150 color-grey60 mb-20 fz-lg-14">
       Арт.: 12*****890
     </div>
     <div class="modalDetailImgW mb-20">
@@ -1891,8 +1912,8 @@
         15 шт.
       </div>
     </div>
-    <div class="d-flex gap-3 align-items-center justify-content-between mb-5">
-      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200">
+    <div class="d-flex gap-2 gap-lg-3 align-items-center justify-content-between mb-5 flex-wrap">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200 w-lg-150 d-flex">
         <input type="number" class="formInput catalogCardRowCount w-100 font-family" value="1" min="1">
         <div class="d-flex flex-column">
           <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
@@ -1909,7 +1930,7 @@
           </button>
         </div>
       </div>
-      <button class="productAddToCart button button--grey90 color-primary px-3 gap-12">
+      <button class="productAddToCart w-lg-160 button button--grey90 color-primary px-2 px-lg-3 gap-12">
         <svg class="w-24 h-24" style="fill: var(--primary); stroke: var(--primary);">
           <use xlink:href="img/icons/icons.svg#cart"></use>
         </svg>

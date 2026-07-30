@@ -1,0 +1,95 @@
+<div
+  class="d-flex gap-4 align-items-start align-items-lg-center justify-content-between mb-20 flex-wrap flex-column-reverse flex-lg-row">
+  <div class="d-flex flex-wrap gap-2">
+    <button class="button h-48 gap-1 button--grey00 px-12 h-lg-32 fz-lg-14">
+      Фильтр
+      <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+    <button class="button h-48 gap-1 button--grey00 px-12 h-lg-32 fz-lg-14">
+      Фильтр
+      <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+    <button class="button h-48 gap-1 button--grey00 px-12 h-lg-32 fz-lg-14">
+      до 80000
+      <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+    <button class="button h-48 gap-1 button--grey00 px-12 h-lg-32 fz-lg-14 color-grey60">
+      Очистить все
+      <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="d-flex justify-content-between w-lg-100">
+    <div class="d-flex d-lg-none gap-2">
+      <button class="catalogMobFilterBtn button button--grey00 px-3">
+        <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px;">
+          <use xlink:href="img/icons/icons.svg#filter"></use>
+        </svg>
+      </button>
+      <button class="button button--grey00 px-3 dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px;">
+          <use xlink:href="img/icons/icons.svg#sort"></use>
+        </svg>
+      </button>
+      <div class="dropdown-menu mob-sort-menu" aria-labelledby="dropdownMenuButton1">
+        <div class="mob-sort-menu-head">
+          Сортировать:
+        </div>
+        <ul>
+          <li class="active">
+            <a class="dropdown-item d-flex gap-12 fw-medium" href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#money"></use>
+              </svg>
+              По цене
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-12 fw-medium" href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#available"></use>
+              </svg>
+              По наличию
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-12 fw-medium" href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+              По популярности
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <button class="button button--grey00 px-3 active catalogTypeGrid">
+        <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px;">
+          <use xlink:href="img/icons/icons.svg#catalog"></use>
+        </svg>
+      </button>
+      <button class="button button--grey00 px-3 catalogTypeGrid">
+        <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px; stroke-linecap: round;">
+          <use xlink:href="img/icons/icons.svg#list"></use>
+        </svg>
+      </button>
+      <div class="formSelect d-none d-lg-block">
+        <select class="px-3" name="sort" id="catalogSort">
+          <option value="1">Сначала дешёвые</option>
+          <option value="2">Сначала дорогие</option>
+          <option value="3">По имени</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+</div>

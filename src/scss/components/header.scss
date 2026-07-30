@@ -6,6 +6,15 @@
 
   &B {
     background-color: var(--grey90);
+    @media(max-width: 991px){
+      position: fixed;
+      width: 100%;
+      z-index: 111;
+      top: 0;
+    }
+    &:has(.headerCatalog.active){
+      transform: none!important;
+    }
   }
 
   &Nav {
@@ -545,4 +554,14 @@
   @media(max-width: 991px) {
     width: 100%;
   }
+}
+.headerMobileSearchTop {
+  background-color: var(--grey90);
+}
+.headerMobileSearchBack {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,6 +1,20 @@
-<div class="sidebar" id="sidebar">
+<div class="sidebar catalog-sidebar pt-4 pt-lg-0" id="sidebar">
   <div class="filter">
     <div class="container">
+
+      <div class="d-flex d-lg-none justify-content-between align-items-center gap-2 mb-4">
+
+        <div class="d-flex gap-2 align-items-center">
+          <button class="filterBtnClose d-flex d-lg-none">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <h5>Фильтры</h5>
+        </div>
+
+        <a class="d-block d-lg-none fw-medium color-grey hover-opacity" href="#">Сбросить все</a>
+      </div>
 
       <div class="filterItem">
         <div class="filterItemHead d-flex justify-content-between gap-2 align-items-center active">
@@ -37,7 +51,7 @@
           <img src="@img/icons/select-arrow.svg" alt="icon">
         </div>
         <div class="filterItemBody" style="display: block;">
-          <div class="searchField border-gray d-flex position-relative w-100 gap-12 mb-20 py-2 px-12">
+          <div class="searchField border-gray d-flex position-relative w-100 gap-12 mb-20 py-2 px-12 radius-4">
             <img class="searchIcon" src="@img/icons/search.svg" alt="icon">
             <input class="formInput--search w-100" type="search" placeholder="Поиск">
             <button class="search-clear" type="button"><img src="@img/icons/search-clear.svg" alt="icon"></button>
@@ -150,7 +164,7 @@
         Перейти<br> в электронный каталог
         <img src="@img/icons/el-cat-link.svg" alt="icon">
       </a>
-      
+
     </div>
 
   </div>
