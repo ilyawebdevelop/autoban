@@ -17,6 +17,7 @@
 
     &:has(.headerCatalog.active) {
       transform: none !important;
+      transition: none!important;
     }
 
     &.header--hidden {

@@ -16517,6 +16517,7 @@ h6,
 }
 .headerB:has(.headerCatalog.active) {
   transform: none !important;
+  transition: none !important;
 }
 .headerB.header--hidden {
   transform: translateY(-100%);
