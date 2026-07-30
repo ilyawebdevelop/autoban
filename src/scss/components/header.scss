@@ -17,7 +17,7 @@
 
     &:has(.headerCatalog.active) {
       transform: none !important;
-      transition: none!important;
+      transition: none !important;
     }
 
     &.header--hidden {
@@ -294,6 +294,7 @@
   @media(max-width: 991px) {
     overflow: unset;
     max-height: unset;
+    padding-bottom: 60px;
   }
 }
 
@@ -513,6 +514,10 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper:has(.headerMobileSearchW.active) .navBar {
+  z-index: 0;
 }
 
 .headerMobileSearchW {

@@ -16768,6 +16768,7 @@ h6,
   .headerCatalogNav {
     overflow: unset;
     max-height: unset;
+    padding-bottom: 60px;
   }
 }
 
@@ -16986,6 +16987,10 @@ h6,
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper:has(.headerMobileSearchW.active) .navBar {
+  z-index: 0;
 }
 
 .headerMobileSearchW {
