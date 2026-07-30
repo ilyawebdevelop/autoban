@@ -14516,10 +14516,6 @@ a.underline:hover {
   padding: 0 var(--container-offset);
 }
 
-.container {
-  padding: 0 16px;
-}
-
 @media (min-width: 575.98px) {
   .container {
     max-width: 540px;
