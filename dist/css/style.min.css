@@ -16620,6 +16620,9 @@ h6,
 .headerPhone:hover {
   color: var(--primary);
 }
+.headerPhone.color-primary:hover {
+  opacity: 0.9;
+}
 
 .headerCartMenu {
   padding: 40px 16px 40px 40px;

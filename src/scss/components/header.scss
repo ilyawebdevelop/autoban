@@ -131,6 +131,11 @@
     &:hover {
       color: var(--primary);
     }
+    &.color-primary {
+      &:hover {
+        opacity: .9;
+      }
+    }
   }
 }
 
