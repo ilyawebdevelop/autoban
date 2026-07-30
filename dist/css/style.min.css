@@ -16957,7 +16957,7 @@ h6,
     top: 0;
     background-color: var(--grey90);
     height: 100vh;
-    z-index: 3;
+    z-index: 112;
     flex-direction: column;
     left: 0;
     padding-top: 15px;
@@ -18601,7 +18601,7 @@ h6,
   background-color: #000;
   border-top: 1px solid var(--gey60);
   padding-top: 4px;
-  z-index: 2;
+  z-index: 111;
   padding-top: 4px;
   padding-bottom: 4px;
 }
