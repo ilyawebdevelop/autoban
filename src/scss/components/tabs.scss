@@ -1,9 +1,10 @@
 .tabs {
   &__nav {
     display: flex;
-    column-gap: 8px;
+    // column-gap: 8px;
     width: 100%;
     border-bottom: 1px solid var(--grey10);
+    flex-wrap: wrap;
 
     &-btn {
       height: 48px;
@@ -16,6 +17,13 @@
       padding-left: 16px;
       padding-right: 16px;
       color: var(--grey60);
+      @media(max-width: 991px){
+        font-size: 14px;
+        line-height: 20px;
+        height: 32px;
+        padding-left: 6px;
+        padding-right: 6px;
+      }
 
       &:hover {
         color: var(--main-color);

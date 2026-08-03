@@ -6,6 +6,9 @@
     border: 1px solid var(--grey30);
     padding: 30px;
     height: 160px;
+    @media(max-width: 575px){
+      padding: 20px;
+    }
     img {
       width: 100%;
       height: 100%;

@@ -6,6 +6,23 @@
 
   &B {
     background-color: var(--grey90);
+    transition: all .2s linear;
+
+    @media(max-width: 991px) {
+      position: fixed;
+      width: 100%;
+      z-index: 111;
+      top: 0;
+    }
+
+    &:has(.headerCatalog.active) {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    &.header--hidden {
+      transform: translateY(-100%);
+    }
   }
 
   &Nav {
@@ -95,7 +112,8 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       gap: 8px;
     }
 
@@ -114,13 +132,21 @@
         font-size: 18px;
       }
     }
+
     img {
-      @media(max-width: 991px){
+      @media(max-width: 991px) {
         width: 24px;
       }
     }
+
     &:hover {
       color: var(--primary);
+    }
+
+    &.color-primary {
+      &:hover {
+        opacity: .9;
+      }
     }
   }
 }
@@ -268,6 +294,7 @@
   @media(max-width: 991px) {
     overflow: unset;
     max-height: unset;
+    padding-bottom: 60px;
   }
 }
 
@@ -458,7 +485,7 @@
     top: 0;
     background-color: var(--grey90);
     height: 100vh;
-    z-index: 3;
+    z-index: 112;
     flex-direction: column;
     left: 0;
     padding-top: 15px;
@@ -487,6 +514,10 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper:has(.headerMobileSearchW.active) .navBar {
+  z-index: 0;
 }
 
 .headerMobileSearchW {
@@ -545,4 +576,16 @@
   @media(max-width: 991px) {
     width: 100%;
   }
+}
+
+.headerMobileSearchTop {
+  background-color: var(--grey90);
+}
+
+.headerMobileSearchBack {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

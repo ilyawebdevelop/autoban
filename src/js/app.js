@@ -278,19 +278,21 @@ var mySwiperClients = new Swiper(clientsSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 8,
     },
     576: {
-      spaceBetween: 10,
-      slidesPerView: 1,
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
     },
     992: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 4,
     },
     1200: {
+      slidesPerView: 5,
+    },
+    1400: {
       slidesPerView: 6,
-      spaceBetween: 20,
     },
   },
 });
@@ -338,6 +340,7 @@ headerCartBtn.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.headerCatalogNav--inner .headerCatalogNavLink');
 const menuContents = document.querySelectorAll('.headerCatalogContent');
 let headerCatalogClose = document.querySelector('.headerCatalogClose');
+let headerCatalogTabBtnModel = document.getElementById('headerCatalogTabBtnModel');
 
 navLinks.forEach(link => {
 
@@ -356,6 +359,9 @@ navLinks.forEach(link => {
         activeMenu.style.display = 'grid';
       }
     });
+
+
+
   }
   if (mediaQueryMax991.matches) {
     const target = link.getAttribute('data-menu');
@@ -371,6 +377,12 @@ navLinks.forEach(link => {
       activeMenu.style.display = 'none';
     });
   }
+});
+
+headerCatalogTabBtnModel.addEventListener('click', () => {
+  menuContents.forEach(content => {
+    content.style.display = 'none';
+  });
 });
 
 // Опционально: скрыть меню, если мышь ушла из всей области навигации
@@ -495,4 +507,71 @@ headerMainMobileSearchBtn?.addEventListener('click', () => {
 headerSearchBtnClose?.addEventListener('click', () => {
   headerMobileSearchToggle();
   bodyOverflow();
+});
+
+
+// mobile header
+if (window.innerWidth < 992) {
+  let lastScrollY = window.scrollY;
+  const headerb = document.querySelector('.headerB');
+  const scrollThreshold = 10; // порог, чтобы не дёргалось от мелких скроллов
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (Math.abs(currentScrollY - lastScrollY) < scrollThreshold) {
+      return;
+    }
+
+    if (currentScrollY > lastScrollY && currentScrollY > headerb.offsetHeight) {
+      // скролл вниз — прячем
+      headerb.classList.add('header--hidden');
+    } else {
+      // скролл вверх — показываем
+      headerb.classList.remove('header--hidden');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+}
+
+const loadMoreButtons = document.querySelectorAll('.catalogCatLoadMore');
+
+loadMoreButtons.forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Находим родительский контейнер
+    const parent = this.closest('.catalog-tags-action');
+    if (!parent) return;
+
+    // Находим список и span с текстом внутри этого родителя
+    const tagsList = parent.querySelector('.catalog-tags');
+    const btnSpan = this.querySelector('span');
+
+    // Переключаем класс .active у списка
+    tagsList.classList.toggle('active');
+
+    // Меняем текст в зависимости от наличия класса
+    if (tagsList.classList.contains('active')) {
+      btnSpan.textContent = 'Свернуть';
+    } else {
+      btnSpan.textContent = 'Показать полностью';
+    }
+  });
+});
+
+// sidebar catalog show mobile
+let catalogMobFilterBtn = document.querySelector('.catalogMobFilterBtn');
+let catalogSidebar = document.querySelector('.catalog-sidebar');
+let catalogSidebarClose = document.querySelector('.filterBtnClose');
+
+catalogMobFilterBtn?.addEventListener('click', () => {
+  catalogSidebar.classList.add('active');
+  bodyEl.classList.add('hidden');
+});
+
+catalogSidebarClose?.addEventListener('click', () => {
+  catalogSidebar.classList.remove('active');
+  bodyEl.classList.remove('hidden');
 });

@@ -1,9 +1,10 @@
 .catalog {
   &Slider {
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       overflow: visible;
     }
   }
+
   &Slide {
     height: auto;
 
@@ -22,7 +23,8 @@
       display: flex;
       justify-content: center;
       margin-bottom: 10px;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         padding: 10px;
       }
 
@@ -33,7 +35,8 @@
       img {
         object-fit: contain;
         height: 160px;
-        @media(max-width: 1400px){
+
+        @media(max-width: 1400px) {
           height: 100px;
         }
       }
@@ -54,7 +57,8 @@
       display: -webkit-box;
       /* Включаем флексбоксы */
       -webkit-box-orient: vertical;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         font-size: 12px;
         line-height: 16px;
       }
@@ -90,14 +94,35 @@
   column-gap: 20px;
   row-gap: 40px;
 
+  @media(max-width: 1400px) {
+    column-gap: 8px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
   .catalogCard {
     grid-column: 3 span;
+
+    @media(max-width: 1199px) {
+      grid-column: 4 span;
+    }
+
+    @media(max-width: 575px) {
+      grid-column: 6 span;
+    }
   }
 }
 
 .catalogContent {
   padding-left: 75px;
   width: 100%;
+
+  @media(max-width: 1400px) {
+    padding-left: 40px;
+  }
+
+  @media(max-width: 991px) {
+    padding-left: 0;
+  }
 }
 
 .filterItemHead {
@@ -180,6 +205,9 @@
   position: relative;
   flex-shrink: 0;
   height: fit-content;
+  @media(max-width: 1199px){
+    display: none;
+  }
 
   &:hover {
     opacity: .85;
@@ -212,11 +240,24 @@
 .catalogCardRowPriceW {
   width: 120px;
   flex-shrink: 0;
+  @media(max-width: 991px){
+    width: 105px;
+  }
+  .h5 {
+    @media(max-width: 991px){
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
 }
 
 .catalogCardRowTitle {
   max-width: 100%;
   color: var(--grey90);
+  @media(max-width: 991px){
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   &:hover {
     color: var(--black);
@@ -232,6 +273,9 @@
   background-color: #fff;
   border-radius: 2px;
   height: 40px;
+  @media(max-width: 1199px){
+    display: none;
+  }
 
   &.h-48 {
     height: 48px;
@@ -242,6 +286,16 @@
   width: 54px;
   height: 24px;
   text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  &:focus {
+    border-color: transparent;
+  }
+  &.w-lg-100 {
+    @media(max-width: 991px){
+     width: 100px; 
+    }
+  }
 }
 
 .catalogCardRow--detail {
@@ -269,5 +323,87 @@
         stroke: var(--primary) !important;
       }
     }
+  }
+}
+
+.catalog-tags {
+  @media(max-width: 991px){
+    max-height: 135px;
+    overflow: hidden;
+    position: relative;
+  }
+  &::after {
+    content: '';
+    @media(max-width: 991px){
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      width: 100%;
+      height: 34px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &.active {
+    max-height: unset;
+    overflow: visible;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.mob-sort-menu {
+  border: 1px solid var(--grey00);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  padding-top: 0;
+
+  li {
+    &.active {
+      a {
+        color: var(--black);
+      }
+
+      svg {
+        stroke: var(--black);
+      }
+    }
+
+    a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: var(--grey60);
+
+      &:hover,
+      &:focus {
+        background-color: var(--black);
+        color: #fff;
+
+        svg {
+          stroke: #fff;
+        }
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: transparent;
+      stroke: var(--grey60);
+      stroke-width: 1.5px;
+    }
+  }
+
+  &-head {
+    font-weight: 500;
+    color: var(--grey);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--light);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

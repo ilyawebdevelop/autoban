@@ -1,77 +1,25 @@
-<section class="sect pt-0">
+<section class="sect pt-0 pb-lg-70">
   <div class="container">
 
-    <div class="d-flex gap-120 mb-40">
+    <div class="d-flex gap-120 gap-xl-60 mb-40 mb-lg-24">
       <div class="d-flex flex-column">
-        <div class="d-flex gap-20 mb-3">
+        <div class="d-flex align-items-start align-items-lg-center gap-20 mb-3 flex-column flex-lg-row">
           <a href="#" class="page-prev-link">
             <svg>
               <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
             </svg>
           </a>
-          <h1 class="h2">Двигатель и комплектующие</h1>
+          <h1 class="h2 mb-0">Двигатель и комплектующие</h1>
         </div>
-        <div class="color-grey-90 mb-3 lh-150">
+        <div class="color-grey-90 mb-3 lh-150 fz-lg-14">
           Грузовики Shacman оснащаются надежными дизельными двигателями Weichai Power (модели WP10, WP12, WP13) и
           Cummins
           (например, ISM11). Популярные модели, такие как X3000 и F3000, в основном комплектуются моторами Weichai
           мощностью от 340 до 550 л. с.
         </div>
-        <div class="d-flex gap-2 flex-wrap">
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Топливная система
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система выпуска
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система охлаждения ДВС
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Блоки цилиндров, ГБЦ и картеры
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Крепление и защита двигателя
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Поршни, шатуны, кольца, вкладыши
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система смазки
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Коленвалы, распредвалы и маховики
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            ГРМ
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Турбины, компрессоры
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система зажигания
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Двигатели в сборе
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система впуска
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Система кондиционирования и отопления
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Стартеры и генераторы
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Прокладки и Сальники
-          </a>
-          <a href="#" class="button button--grey00 h-32 px-6 fz-14 color-grey-90">
-            Ролики и ремни
-          </a>
-        </div>
+        @@include('catalog-tags.html',{})
       </div>
-      <div class="mainCatCard pe-none mainCatCard--intro mainCatCard--rect">
+      <div class="mainCatCard pe-none mainCatCard--intro mainCatCard--rect d-none d-lg-flex">
         <img class="mainCatCardImg mainCatCardImg--absolute" src="@img/admin/cat/image-1.png" alt="image">
       </div>
     </div>
@@ -79,53 +27,7 @@
     <div class="d-flex">
       @@include('sidebar.html',{})
       <div class="catalogContent">
-        <div class="d-flex gap-4 align-items-center justify-content-between mb-20">
-          <div class="d-flex flex-wrap gap-2">
-            <button class="button h-48 gap-1 button--grey00 px-12">
-              Фильтр
-              <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
-                <use xlink:href="img/icons/icons.svg#remove"></use>
-              </svg>
-            </button>
-            <button class="button h-48 gap-1 button--grey00 px-12">
-              Фильтр
-              <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
-                <use xlink:href="img/icons/icons.svg#remove"></use>
-              </svg>
-            </button>
-            <button class="button h-48 gap-1 button--grey00 px-12">
-              до 80000
-              <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
-                <use xlink:href="img/icons/icons.svg#remove"></use>
-              </svg>
-            </button>
-            <button class="button h-48 gap-1 button--grey00 px-12 color-grey60">
-              Очистить все
-              <svg class="w-24 h-24" style="stroke-width: 2px; stroke: #666;">
-                <use xlink:href="img/icons/icons.svg#remove"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="d-flex gap-2">
-            <button class="button button--grey00 px-3 active catalogTypeGrid">
-              <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px;">
-                <use xlink:href="img/icons/icons.svg#catalog"></use>
-              </svg>
-            </button>
-            <button class="button button--grey00 px-3 catalogTypeGrid">
-              <svg class="w-24 h-24" style="fill: transparent; stroke-width: 1.5px;">
-                <use xlink:href="img/icons/icons.svg#list"></use>
-              </svg>
-            </button>
-            <div class="formSelect">
-              <select class="px-3" name="sort" id="catalogSort">
-                <option value="1">Сначала дешёвые</option>
-                <option value="2">Сначала дорогие</option>
-                <option value="3">По имени</option>
-              </select>
-            </div>
-          </div>
-        </div>
+        @@include('filter-sort.html',{})
         @@include('product-grid.html',{})
         <div class="mt-40 mb-40">
           @@include('../catalog/load-more.html',{})

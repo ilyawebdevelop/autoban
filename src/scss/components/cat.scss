@@ -86,6 +86,16 @@
     }
   }
 
+  &.mainCatCard--lg-140 {
+    @media(max-width: 991px) {
+      min-height: 140px;
+    }
+
+    @media(max-width: 575px) {
+      min-height: 100px;
+      height: 100px !important;
+    }
+  }
 
 }
 
@@ -95,7 +105,21 @@
   display: -webkit-box;
   /* Включаем флексбоксы */
   -webkit-box-orient: vertical;
+
   /* Вертикальная ориентация */
+  &.mainCatCardTitle--lg {
+    @media(max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &.mainCatCardTitle--sm {
+    display: none;
+
+    @media(max-width: 991px) {
+      display: -webkit-box;
+    }
+  }
 }
 
 .mainCatCard--intro {
@@ -107,7 +131,10 @@
     left: 0;
     right: 0;
     top: 50%;
+    bottom: unset;
     transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -132,17 +159,6 @@
 
       @media(max-width: 991px) {
         height: auto;
-      }
-
-      &.mainCatCard--lg-140 {
-        @media(max-width: 991px) {
-          min-height: 140px;
-        }
-
-        @media(max-width: 575px) {
-          min-height: 100px;
-          height: 100px;
-        }
       }
     }
   }

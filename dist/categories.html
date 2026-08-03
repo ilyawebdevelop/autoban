@@ -154,7 +154,7 @@
             <use xlink:href="img/icons/icons.svg#phone"></use>
           </svg>
         </a>
-        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalOrder">
+        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalWrite">
           <svg style="width: 20px; height: 20px; fill: transparent; stroke: #fff; stroke-width: 1.5px;">
             <use xlink:href="img/icons/icons.svg#message"></use>
           </svg>
@@ -424,7 +424,7 @@
             <div class="tabs_2" data-tabs="popup_2">
               <ul class="tabs__nav mb-3">
                 <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По типу</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По модели</button></li>
+                <li class="tabs__nav-item" id="headerCatalogTabBtnModel"><button class="tabs__nav-btn" type="button">По модели</button></li>
               </ul>
               <div class="tabs__content">
                 <div class="tabs__panel">
@@ -884,29 +884,29 @@
       </div>
     </div>
     <div class="headerMobileSearchW">
-  <div class="headerMobileSearchTop border-b-gray py-2">
+  <div class="headerMobileSearchTop border-b-gray py-12">
     <div class="container">
-      <div class="d-flex align-items-center">
-        <button class="headerMobileSearchBack" type="button">
-          <img src="img/icons/prev-arrow.svg" alt="icon">
-        </button>
-        <div class="searchField position-relative w-100">
-          <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+      <div class="d-flex gap-3 align-items-center">
+        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+          <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
+          <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
           <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+          <button class="searchBtn button button--sm button--grey90 px-3 fz-12 fw-normal">
+            Искать
+          </button>
         </div>
+        <button class="headerMobileSearchBack" type="button">
+          <img src="img/icons/close-white.svg" alt="icon">
+        </button>
       </div>
     </div>
   </div>
-  <div class="headerMobileSearchContent">
+  <div class="headerMobileSearchContent px-2">
     <div class="container">
       <div class="d-flex gap-2 py-4 flex-wrap">
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Диваны</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Мебель-трансформер 3в1</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кровати</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Матрасы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Шкафы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кухни</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Столы и стулья</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Двигатель и комплектующие</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Трансмиссия</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Подвеска и рулевое управление</a>
       </div>
     </div>
   </div>
@@ -915,7 +915,7 @@
   </div>
 </header>
 		<main class="main">
-			<section class="breadcrumbsSect py-20 mb-20" id="breadcrumbs">
+			<section class="breadcrumbsSect py-20 pt-lg-35 mb-20" id="breadcrumbs">
 
   <div class="container">
     <div class="breadcrumbs">
@@ -970,72 +970,102 @@
     </div>
 
     <div class="tabs" data-tabs="popup">
-      <ul class="tabs__nav mb-40">
+      <ul class="tabs__nav mb-40 mb-lg-24">
         <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По типу детали</button></li>
         <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По электронным каталогам</button></li>
       </ul>
       <div class="tabs__content">
         <div class="tabs__panel">
-          <h2 class="mb-40">По типу детали</h2>
-          <div class="d-grid grid-cols-4 gap-20">
+          <h2 class="mb-40 d-none d-lg-block">По типу детали</h2>
+          <div class="d-grid grid-cols-4 gap-20 gap-lg-8 gap-row-lg-40">
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
                 <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-1.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Двигатель и комплектующие</div>
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Двигатель и комплектующие</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Двигатель и комплектующие</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
                 <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-2.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Трансмиссия</div>
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Трансмиссия</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Трансмиссия</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
                 <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-3.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Подвеска и рулевое управление</div>
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Подвеска и рулевое управление</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Подвеска и рулевое управление</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
                 <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-4.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Кабина</div>
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Кабина</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Кабина</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
-                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-7.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Рама, кузов, надстройки</div>
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-1.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Двигатель и комплектующие</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Двигатель и комплектующие</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
-                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-8.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Электрика и свет</div>
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-2.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Трансмиссия</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Трансмиссия</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
-                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-9.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Гидравлические и пневмосистемы</div>
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-3.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Подвеска и рулевое управление</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Подвеска и рулевое управление</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
-                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-10.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Тормозная система</div>
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-4.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Кабина</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Кабина</a>
             </div>
             <div class="col">
               <a href="#" class="mainCatCard mainCatCard--rect">
-                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-11.png" alt="image">
-                <div class="mainCatCardTitle h4 fw-semibold">Сальники</div>
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-1.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Двигатель и комплектующие</div>
               </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Двигатель и комплектующие</a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-2.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Трансмиссия</div>
+              </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Трансмиссия</a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-3.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Подвеска и рулевое управление</div>
+              </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Подвеска и рулевое управление</a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard mainCatCard--rect">
+                <img class="mainCatCardImg mainCatCardImg--absolute" src="img/admin/cat/image-4.png" alt="image">
+                <div class="mainCatCardTitle h4 fw-semibold d-none d-lg-block">Кабина</div>
+              </a>
+              <a class="mainCatCardTitleMob h5 d-block d-lg-none mt-3 mb-0" href="#">Кабина</a>
             </div>
           </div>
         </div>
         <div class="tabs__panel">
-          <div class="d-flex justify-content-between gap-4 align-items-center mb-40">
+          <div class="d-none d-lg-flex justify-content-between gap-4 align-items-center mb-40">
             <h2>По электронным каталогам</h2>
             <div class="searchField d-flex position-relative bg--grey00 gap-12 p-2">
               <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
@@ -1044,114 +1074,50 @@
             </div>
           </div>
 
-          <div class="d-grid grid-cols-5 gap-20">
+          <div class="d-grid grid-cols-5 gap-20 gap-lg-8 gap-row-lg-40">
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F2000</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">Shacman F2000</div>
               </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#">Shacman F2000</a>
             </div>
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F3000</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">Shacman F3000 Shacman SX1255GP4 Shacman SX1255GP4</div>
               </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#">Shacman F3000 Shacman SX1255GP4 Shacman SX1255GP4</a>
             </div>
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman SX1255GP4 Shacman SX1255GP4</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">Shacman SX1255GP4</div>
               </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#">Shacman SX1255GP4</a>
             </div>
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX13164N456</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">SX13164N456</div>
               </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#">SX13164N456</a>
             </div>
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3255DR385</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">SX3255DR385</div>
               </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#">SX3255DR385</a>
             </div>
             <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
+              <a href="#" class="mainCatCard mainCatCard--lg-140 align-items-center">
                 <img class="mainCatCardImg mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3256DR384 (F3000) Shacman SX1255GP4</div>
+                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3 mainCatCardTitle--lg mb-0 mainCatCardTitle-max-stroke">
+                  SX3256DR384 (F3000)
+                </div>
               </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F2000</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F3000</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman SX1255GP4</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX13164N456</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3255DR385 Shacman SX1255GP4</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3256DR384 (F3000)</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F2000</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman F3000</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle mainCatCardTitle-max-stroke h6 text-center fw-semibold mt-3">Shacman SX1255GP4 Shacman SX1255GP4 Shacman SX1255GP4</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX13164N456</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg  mainCatCardImg--sm" src="img/admin/cat/image-6.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3255DR385</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="mainCatCard align-items-center">
-                <img class="mainCatCardImg mainCatCardImg--sm" src="img/admin/cat/image-5.png" alt="image">
-                <div class="mainCatCardTitle text-center h6 fw-semibold mt-3">SX3256DR384 (F3000)</div>
-              </a>
+              <a class="mainCatCardTitleMob h6 mt-3 mb-0 mainCatCardTitle--sm mainCatCardTitle-max-stroke" href="#"> SX3256DR384 (F3000)</a>
             </div>
           </div>
 
@@ -1694,10 +1660,10 @@
   </div>
 
   <div class="modalContent">
-    <h3 class="h3 mb-10">
+    <h3 class="h3 mb-10 h3-xl-20">
       Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
     </h3>
-    <div class="lh-150 color-grey60 mb-20">
+    <div class="lh-150 color-grey60 mb-20 fz-lg-14">
       Арт.: 12*****890
     </div>
     <div class="modalDetailImgW mb-20">
@@ -1724,8 +1690,8 @@
         15 шт.
       </div>
     </div>
-    <div class="d-flex gap-3 align-items-center justify-content-between mb-5">
-      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200">
+    <div class="d-flex gap-2 gap-lg-3 align-items-center justify-content-between mb-5 flex-wrap">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200 w-lg-150 d-flex">
         <input type="number" class="formInput catalogCardRowCount w-100 font-family" value="1" min="1">
         <div class="d-flex flex-column">
           <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
@@ -1742,7 +1708,7 @@
           </button>
         </div>
       </div>
-      <button class="productAddToCart button button--grey90 color-primary px-3 gap-12">
+      <button class="productAddToCart w-lg-160 button button--grey90 color-primary px-2 px-lg-3 gap-12">
         <svg class="w-24 h-24" style="fill: var(--primary); stroke: var(--primary);">
           <use xlink:href="img/icons/icons.svg#cart"></use>
         </svg>

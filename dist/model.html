@@ -154,7 +154,7 @@
             <use xlink:href="img/icons/icons.svg#phone"></use>
           </svg>
         </a>
-        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalOrder">
+        <a href="#" class="headerMobileMessage d-flex d-lg-none" data-fancybox data-src="#modalWrite">
           <svg style="width: 20px; height: 20px; fill: transparent; stroke: #fff; stroke-width: 1.5px;">
             <use xlink:href="img/icons/icons.svg#message"></use>
           </svg>
@@ -424,7 +424,7 @@
             <div class="tabs_2" data-tabs="popup_2">
               <ul class="tabs__nav mb-3">
                 <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По типу</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">По модели</button></li>
+                <li class="tabs__nav-item" id="headerCatalogTabBtnModel"><button class="tabs__nav-btn" type="button">По модели</button></li>
               </ul>
               <div class="tabs__content">
                 <div class="tabs__panel">
@@ -884,29 +884,29 @@
       </div>
     </div>
     <div class="headerMobileSearchW">
-  <div class="headerMobileSearchTop border-b-gray py-2">
+  <div class="headerMobileSearchTop border-b-gray py-12">
     <div class="container">
-      <div class="d-flex align-items-center">
-        <button class="headerMobileSearchBack" type="button">
-          <img src="img/icons/prev-arrow.svg" alt="icon">
-        </button>
-        <div class="searchField position-relative w-100">
-          <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+      <div class="d-flex gap-3 align-items-center">
+        <div class="searchField d-flex position-relative w-100 bg--grey00 gap-12 p-2">
+          <img class="ml-2 searchIcon" src="img/icons/search.svg" alt="icon">
+          <input class="formInput--search w-100" type="search" placeholder="Найти запчасть">
           <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+          <button class="searchBtn button button--sm button--grey90 px-3 fz-12 fw-normal">
+            Искать
+          </button>
         </div>
+        <button class="headerMobileSearchBack" type="button">
+          <img src="img/icons/close-white.svg" alt="icon">
+        </button>
       </div>
     </div>
   </div>
-  <div class="headerMobileSearchContent">
+  <div class="headerMobileSearchContent px-2">
     <div class="container">
       <div class="d-flex gap-2 py-4 flex-wrap">
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Диваны</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Мебель-трансформер 3в1</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кровати</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Матрасы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Шкафы</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кухни</a>
-        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Столы и стулья</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Двигатель и комплектующие</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Трансмиссия</a>
+        <a class="button bg--grey00 py-1 px-12 fw-medium" href="#">Подвеска и рулевое управление</a>
       </div>
     </div>
   </div>
@@ -915,7 +915,7 @@
   </div>
 </header>
 		<main class="main">
-			<section class="breadcrumbsSect py-20 mb-20" id="breadcrumbs">
+			<section class="breadcrumbsSect py-20 pt-lg-35 mb-20" id="breadcrumbs">
 
   <div class="container">
     <div class="breadcrumbs">
@@ -962,25 +962,33 @@
 
 
 </section>
-			<section class="sect pt-0">
+			<section class="sect pt-0 pb-lg-70">
   <div class="container">
 
     <div class="row">
       <div class="col-lg-6">
         <div class="d-flex flex-column">
-          <div class="d-flex gap-20 mb-3">
+          <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-20 mb-3">
             <a href="#" class="page-prev-link">
               <svg>
                 <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
               </svg>
             </a>
-            <h1 class="h2">Shacman F3000</h1>
+            <h1 class="h2 mb-0">Shacman F3000</h1>
           </div>
-          <div class="color-grey60 mb-32 lh-150">
+          <div class="color-grey60 mb-32 mb-lg-16 lh-150 fz-lg-14">
             Актуальность каталога: 2008 г.<br>
             Модификации: SX4185NT361, SX4158NV361, SX4255NT324, SX4255NV324
           </div>
-          <h3 class="mb-4">Группы запчастей</h3>
+
+          <div class="modelImgW position-relative d-block d-lg-none mb-4 pb-2">
+            <img src="img/admin/model/image-1.png" alt="image" class="modelImg">
+            <div class="rect">
+              <img src="img/icons/rect-card.svg" alt="rect">
+            </div>
+          </div>
+
+          <h3 class="mb-4 h3-xl-20">Группы запчастей</h3>
           <div class="modelList">
 
             <div class="modelItem">
@@ -1092,7 +1100,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 d-none d-lg-block">
         <div class="modelImgW position-relative">
           <img src="img/admin/model/image-1.png" alt="image" class="modelImg">
           <div class="rect">
@@ -1638,10 +1646,10 @@
   </div>
 
   <div class="modalContent">
-    <h3 class="h3 mb-10">
+    <h3 class="h3 mb-10 h3-xl-20">
       Амортизатор кабины задний F3000/Х3000 Shacman (DZ13241440150)
     </h3>
-    <div class="lh-150 color-grey60 mb-20">
+    <div class="lh-150 color-grey60 mb-20 fz-lg-14">
       Арт.: 12*****890
     </div>
     <div class="modalDetailImgW mb-20">
@@ -1668,8 +1676,8 @@
         15 шт.
       </div>
     </div>
-    <div class="d-flex gap-3 align-items-center justify-content-between mb-5">
-      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200">
+    <div class="d-flex gap-2 gap-lg-3 align-items-center justify-content-between mb-5 flex-wrap">
+      <div class="position-relative flex-shrink-0 catalogCardRowCountW h-48 w-200 w-lg-150 d-flex">
         <input type="number" class="formInput catalogCardRowCount w-100 font-family" value="1" min="1">
         <div class="d-flex flex-column">
           <button class="catalogCardRowQuantBtn catalogCardRowQuantPlus"
@@ -1686,7 +1694,7 @@
           </button>
         </div>
       </div>
-      <button class="productAddToCart button button--grey90 color-primary px-3 gap-12">
+      <button class="productAddToCart w-lg-160 button button--grey90 color-primary px-2 px-lg-3 gap-12">
         <svg class="w-24 h-24" style="fill: var(--primary); stroke: var(--primary);">
           <use xlink:href="img/icons/icons.svg#cart"></use>
         </svg>
