@@ -360,8 +360,6 @@ navLinks.forEach(link => {
       }
     });
 
-
-
   }
   if (mediaQueryMax991.matches) {
     const target = link.getAttribute('data-menu');
