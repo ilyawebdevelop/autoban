@@ -16156,6 +16156,9 @@ h6,
     display: flex;
   }
 }
+.catalogCatLoadMore.active svg {
+  transform: rotate(180deg);
+}
 
 .filterBtnClose:focus svg, .filterBtnClose:hover svg, .filterBtnClose:active svg {
   stroke: var(--primary);

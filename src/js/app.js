@@ -552,8 +552,10 @@ loadMoreButtons.forEach(button => {
 
     // Меняем текст в зависимости от наличия класса
     if (tagsList.classList.contains('active')) {
+      button.classList.add('active');
       btnSpan.textContent = 'Свернуть';
     } else {
+      button.classList.remove('active');
       btnSpan.textContent = 'Показать полностью';
     }
   });

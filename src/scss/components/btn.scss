@@ -328,6 +328,11 @@
   @media(max-width: 991px) {
     display: flex;
   }
+  &.active {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .filterBtnClose {
